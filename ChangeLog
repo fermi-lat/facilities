@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed May 14 09:24:36 PDT 2003
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+Define exception class facilities::Untranslatable
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 14 09:24:14 PDT 2003
 facilities/cmt
 
