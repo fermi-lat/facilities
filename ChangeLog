@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Mar 20 09:22:48 PST 2002
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Fix for compilation on Windows (thanks, Heather!)
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Mar 20 09:22:25 PST 2002
 facilities/mgr
 
