@@ -1,4 +1,4 @@
-// $Id: bitmanip.h,v 1.1.1.1 1999/12/17 21:38:46 burnett Exp $
+// $Id: bitmanip.h,v 1.1.1.1 1999/12/20 22:27:42 burnett Exp $
 // bitmanip.h
 // Author:  Sawyer Gillespie
 //          University of Washington, Physics Department
