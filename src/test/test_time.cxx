@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.1 2002/08/26 20:24:51 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.2 2002/08/26 21:57:48 jrb Exp $
 /** @file test_meta.cxx
     Sample program to exercise calibration metadata database services
 */
@@ -19,10 +19,7 @@ int main(int argc, char* argv[]) {
     long int       zero = 0;
     long int       negValue = -2000;
     Timestamp unixCreation(zero);
-    //    Timestamp negTimestamp(negValue);
-    //    double    longAgo = 2420000.0;
-    //    Timestamp longAgoTime(longAgo);
-    //    Timestamp veryLongAgo(2200000.0);
+    Timestamp gmttest("1970-01-01 00:00");
     long int        aTime = 4000;
 
     Timestamp aTimestamp(aTime);
@@ -31,14 +28,9 @@ int main(int argc, char* argv[]) {
     std::cout << "unix creation time is " << unixCreation.getString()
               << std::endl;
 
-    //    std::cout << "neg input time is " << negTimestamp.getString()
-    //              << std::endl;
 
     std::cout << "aTimestamp is " << aTimestamp.getString()
               << std::endl;
-
-    //    std::cout << "long ago is " << longAgoTime.getString()
-    //              << std::endl;
   }
   catch (const BadTimeInput e) {
     std::cout << "Exception message:  " << e.complaint << std::endl;
