@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan  3 11:21:53 PST 2003
+facilities/facilities
+
+Modified Files:
+	Timestamp.h 
+Log Message:
+Simplify Timestamp class: take out unused delta time support and
+arithmetic operations +, -, +=, -=
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 19 13:59:02 PST 2002
 facilities/facilities
 
