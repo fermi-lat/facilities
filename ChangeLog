@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jan 12 13:01:57 PST 2004
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Add some code to exercise new utilities, stringToDouble and stringToInt
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jan 12 13:01:26 PST 2004
 facilities/src
 
