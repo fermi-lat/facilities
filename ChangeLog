@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Oct 12 16:30:03 PDT 2001
+facilities/facilities Observer.h
+
+Modified Files:
+	Observer.h 
+Log Message:
+fix warning
+    *
+------------------------------------------------------------
 User: igable  Sat Jul 14 15:10:00 PDT 2001
 facilities/mgr requirements
 
