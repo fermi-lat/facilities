@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Apr  9 13:26:34 PDT 2002
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+fix bug and return std::string instead
+    *
+------------------------------------------------------------
 User: heather  Tue Apr  9 12:49:05 PDT 2002
 facilities/mgr
 
