@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Thu Sep 19 15:16:49 PDT 2002
+facilities/mgr
+
+Removed Files:
+	.cvsignore requirements 
+Log Message:
+
+create cmt folder, remove old mgr; minor fixes for gcc.
+    *
+------------------------------------------------------------
+User: burnett  Thu Sep 19 15:16:49 PDT 2002
 facilities/doc
 
 Modified Files:
