@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Apr 24 08:23:28 PDT 2002
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+use ends rather than endl to insert /0
+    *
+------------------------------------------------------------
 User: burnett  Mon Apr 15 17:07:51 PDT 2002
 facilities/mgr
 
