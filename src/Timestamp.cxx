@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/calibUtil/src/Timestamp.cxx,v 1.4 2002/08/09 16:56:45 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Timestamp.cxx,v 1.1 2002/08/26 20:24:27 jrb Exp $
 
 #include <ctime>
 #include <cstdlib>
@@ -7,8 +7,15 @@
 #include "facilities/Timestamp.h"
 
 namespace facilities {
+  const double Timestamp::julian1970 = 2440587.5;
+  const int    Timestamp::secPerDay =  (24*60*60);
+  const double Timestamp::inverseNano = 1000 * 1000 * 1000;
+  const int    Timestamp::inverseNanoInt = 1000 * 1000 * 1000;
+  const long int Timestamp::maxInt = 0x7fffffff;
+
+
   // return current time (resolution of 1 second)
-  Timestamp::Timestamp() : m_nano(0) {
+  Timestamp::Timestamp() : m_nano(0), m_isDelta(false) {
     m_time = time(0);
   }
 
@@ -83,7 +90,8 @@ namespace facilities {
     
     fields.tm_isdst = 0;   // daylight savings time?
 
-    m_time = timegm(&fields);
+    //    m_time = timegm(&fields);
+    m_time = mktime(&fields);
   }
 
   std::string Timestamp::getString() const {
@@ -170,7 +178,8 @@ namespace facilities {
     fields.tm_wday = -1;
     fields.tm_yday = -1;
     fields.tm_isdst = 0;
-    return timegm(&fields);
+    //    return timegm(&fields);
+    return mktime(&fields);
   }
   
   void Timestamp::toString(time_t bin, std::string& strTime) {
