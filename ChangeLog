@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Feb 14 09:37:13 PST 2003
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+use static char buffer to store returned char* in itoa
+    *
+------------------------------------------------------------
 User: heather  Fri Feb 14 09:36:05 PST 2003
 facilities/cmt
 
