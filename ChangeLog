@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct 21 09:16:35 PDT 2004
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Modify to test expandEnvVar a bit more
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Oct 21 09:16:12 PDT 2004
 facilities/src
 
