@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug 29 16:46:23 PDT 2002
+facilities/facilities
+
+Modified Files:
+	Timestamp.h 
+Log Message:
+Allow subtraction of two absolute times (yielding delta)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug 29 15:50:30 PDT 2002
 facilities/src/test
 
