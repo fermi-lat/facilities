@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 19 14:42:23 PST 2002
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Add Doxygen comments
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Mar 19 14:41:57 PST 2002
 facilities/doc
 
