@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Mon Aug 26 14:57:48 PDT 2002
+facilities/src/test
+
+Modified Files:
+	test_time.cxx 
+Log Message:
+Changes for Windows compatibility.
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Aug 26 14:57:48 PDT 2002
 facilities/src
 
 Modified Files:
