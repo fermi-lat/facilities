@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed May 14 09:46:16 PDT 2003
+facilities
+
+Modified Files:
+	.cvsignore 
+Log Message:
+ignore Linux binaries directory
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 14 09:25:56 PDT 2003
 facilities/src/test
 
