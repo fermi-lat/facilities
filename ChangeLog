@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug 26 13:24:00 PDT 2002
+facilities/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Add Timestamp class and test application for it
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug 26 13:23:11 PDT 2002
 facilities/facilities
 
