@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Apr  9 13:27:25 PDT 2002
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+fix bug and use std::string rather than char*
+    *
+------------------------------------------------------------
 User: heather  Tue Apr  9 13:26:34 PDT 2002
 facilities/facilities
 
