@@ -1,4 +1,4 @@
-// $Id: Scheduler.h,v 1.1.1.1 1999/12/17 21:38:46 burnett Exp $
+// $Id: Scheduler.h,v 1.1.1.1 1999/12/20 22:27:42 burnett Exp $
 
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
@@ -12,7 +12,7 @@
 class ScheduledEvent;
 
 
-class GPStime {
+class facilities_APIDECL GPStime {
     // Represent absolute time. Units seconds.
 public:
     GPStime(double t=0):m_t(t){}
@@ -30,7 +30,7 @@ inline GPStime& operator += (GPStime& t, const double& dt)
 }
 
 
-class Scheduler : private std::multimap<double, ScheduledEvent*>
+class facilities_APIDECL Scheduler : private std::multimap<double, ScheduledEvent*>
 {
     //create a sequence of call backs to a list of ScheduledEvent
     // instances, in time order. Delete each after running 
