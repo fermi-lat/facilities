@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Sat Oct 12 15:01:53 PDT 2002
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+add atoi to match itoa, an assignment from Heather
+    *
+------------------------------------------------------------
 User: lsrea  Sat Oct 12 15:01:51 PDT 2002
 facilities/facilities
 
