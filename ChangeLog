@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 22 12:37:39 PST 2002
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Modify calling sequence for Util::expandEnvVar to recommended form
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 22 12:30:09 PST 2002
 facilities/src
 
