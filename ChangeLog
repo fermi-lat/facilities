@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan  3 11:22:03 PST 2003
+facilities/src
+
+Modified Files:
+	Timestamp.cxx 
+Log Message:
+Simplify Timestamp class: take out unused delta time support and
+arithmetic operations +, -, +=, -=
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan  3 11:21:53 PST 2003
 facilities/facilities
 
