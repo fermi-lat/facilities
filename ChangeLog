@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug 29 15:50:00 PDT 2002
+facilities/src
+
+Modified Files:
+	Timestamp.cxx 
+Log Message:
+Handle local time zone offset properly
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug 29 15:49:45 PDT 2002
 facilities/facilities
 
