@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed May 14 09:48:26 PDT 2003
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Mods to diagnostic message in catch block
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 14 09:46:34 PDT 2003
 facilities/src
 
