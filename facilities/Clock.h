@@ -1,4 +1,4 @@
-// $Id: $
+// $Id: Clock.h,v 1.2 2000/01/22 01:34:18 hsg Exp $
 //
 //  Original Author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -21,7 +21,7 @@ typedef double ClockWord;
 //  This is a general class for representing a clock value in terms
 //  of some integral number of counts (ie. CPU cycles).
 //
-class facilities_APIDECL Clock 
+class Clock 
 {
   public:
       Clock ()

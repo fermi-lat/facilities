@@ -1,4 +1,4 @@
-// $Id: ScheduledEvent.h,v 1.1.1.1 1999/12/20 22:27:42 burnett Exp $
+// $Id: ScheduledEvent.h,v 1.2 2000/01/22 01:34:18 hsg Exp $
 
 #ifndef SCHEDULEDEVENT_H
 #define SCHEDULEDEVENT_H
@@ -7,7 +7,7 @@
 
 class Scheduler;
 
-class facilities_APIDECL ScheduledEvent 
+class ScheduledEvent 
 {
     // abstract base class for an event that is scheduled by the ScheduledEvent class
 public:
