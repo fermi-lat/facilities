@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jrb  Mon Apr  4 23:01:14 PDT 2005
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+requirements:  add back in test_time application
+Timestamp.h, Timestamp.cxx: Add optional time zone offset arguments to
+                            some constructors
+Util.h, Util.cxx   Rename stringTokenize (new map-filling version) to
+                  keyValueTokenize and revise slightly
+test_time.cxx, testUtil.cxx: exercise new stuff
+
+    *
+------------------------------------------------------------
 User: cohen  Fri Apr  1 14:29:10 PST 2005
 facilities/src/test
 
