@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 19 13:19:37 PST 2002
+facilities/facilities
+
+Added Files:
+	Util.h 
+Log Message:
+New class for static utilies.  So far just one:  expandEnvVar
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Mar 19 13:18:30 PST 2002
 facilities/doc
 
