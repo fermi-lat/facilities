@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 19 13:52:00 PST 2002
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Util::expandEnvVar now will translate multiple environment variables
+in one string
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Mar 19 13:50:44 PST 2002
 facilities/mgr
 
