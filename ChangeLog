@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Aug  3 15:23:22 PDT 2004
+facilities/facilities
+
+Modified Files:
+	Timestamp.h 
+Log Message:
+Move implementation of getJulian out of header file
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 11:13:49 PDT 2004
 facilities/doc
 
