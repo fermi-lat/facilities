@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan  6 17:12:03 PST 2004
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Enhance test program to invoke new utilities
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan  6 17:11:42 PST 2004
 facilities/src
 
