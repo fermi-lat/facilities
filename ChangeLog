@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 19 10:16:08 PDT 2002
+facilities/facilities
+
+Modified Files:
+	Timestamp.h 
+Log Message:
+Get rid of gcc warnings by taking out bogus "static"
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Aug 29 17:47:45 PDT 2002
 facilities/src/test
 
