@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 19 13:18:30 PST 2002
+facilities/doc
+
+Added Files:
+	release.notes 
+Log Message:
+Bring facilities package into compliance with doc. standards; 
+mark upcoming tag
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Oct 12 16:30:03 PDT 2001
 facilities/facilities Observer.h
 
