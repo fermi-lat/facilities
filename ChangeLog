@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Wed Sep 29 11:10:50 PDT 2004
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+remove possible null string at end of tokens
+    *
+------------------------------------------------------------
 User: jrb  Tue Aug  3 15:24:47 PDT 2004
 facilities/doc
 
