@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Sat Oct 12 15:01:51 PDT 2002
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+add atoi to match itoa, an assignment from Heather
+    *
+------------------------------------------------------------
 User: burnett  Thu Sep 19 15:16:49 PDT 2002
 facilities/src/test
 
