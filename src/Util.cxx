@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.19 2004/11/01 23:16:41 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.20 2005/04/01 22:26:08 cohen Exp $
 
 #include "facilities/Util.h"
 
@@ -135,21 +135,24 @@ namespace facilities {
   }
 
 
-  void Util::stringTokenize(std::string input, const std::string& delimiters,
-                            const std::string &equal_delimiters,
-			    std::map<std::string,std::string>& tokens, bool clear) {
+  void Util::keyValueTokenize(std::string input, 
+                              const std::string& delimiters,
+                              std::map<std::string,std::string>& tokens, 
+                              const std::string& pairDelimiter,
+                              bool clear) {
     if (clear) tokens.clear();
 
     std::vector<std::string> strvec;
     stringTokenize(input,delimiters,strvec,true);
+    unsigned advance = pairDelimiter.size();
 
     std::vector<std::string>::const_iterator input_itr = strvec.begin();
     while(input_itr!=strvec.end())
       {
 	std::string current = *input_itr++;
-	std::string::size_type j = current.find_first_of(equal_delimiters);
+	std::string::size_type j = current.find(pairDelimiter);
 	std::string key   = current.substr(0, j);
-	std::string value = current.substr(j+1);
+	std::string value = current.substr(j+advance);
 	tokens[key] = value;
       } 
   }
