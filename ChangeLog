@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sat Mar 23 18:45:51 PST 2002
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Fix for windows compile
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 22 12:37:39 PST 2002
 facilities/src/test
 
