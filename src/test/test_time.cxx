@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.2 2002/08/26 21:57:48 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.3 2002/08/29 22:50:30 jrb Exp $
 /** @file test_meta.cxx
     Sample program to exercise calibration metadata database services
 */
@@ -55,6 +55,10 @@ int main(int argc, char* argv[]) {
     facilities::Timestamp future = cur + days10;
     std::cout << "10 days from now is " << future.getString() << std::endl;
     std::cout << "10 days from now julian is " << future.getJulian() << std::endl;
+
+    facilities::Timestamp delta = future - ago10;
+    std::cout << "result of subtracting absolute times (units = days) "
+              << delta.getJulian() << std::endl;
   }
 
   catch (const BadTimeInput f) {
