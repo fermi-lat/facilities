@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Timestamp.cxx,v 1.4 2002/08/29 23:46:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Timestamp.cxx,v 1.5 2003/01/03 19:22:03 jrb Exp $
 
 #include <ctime>
 #include <cstdlib>
@@ -88,6 +88,12 @@ namespace facilities {
 
     toString(m_time, str);
     return str;
+  }
+
+  double  Timestamp::getJulian() const {
+    double julian = (m_time +  m_nano/inverseNano)/secPerDay;
+    julian += julian1970;
+    return julian;
   }
 
 
