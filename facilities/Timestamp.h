@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.2 2002/08/26 21:57:47 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.3 2002/08/29 22:49:45 jrb Exp $
 #ifndef FACILITIES_TIMESTAMP_H
 #define FACILITIES_TIMESTAMP_H
 
@@ -23,7 +23,14 @@ namespace facilities {
   /** Timestamp class, valid for dates from 1970 through 2037 and for
       non-negative delta times of up to about 68 years 
 
-      Supports comparisons, addition and subtraction where sensible
+      Supports comparisons, addition and subtraction where sensible:
+          compare two delta times
+          compare two dates
+          date + delta ==> date
+          delta + delta ==> delta
+          date - delta ==> date
+          date - date ==> delta
+
 
       Input to constructors may be
               Julian date      
