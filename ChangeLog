@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Aug 29 17:47:45 PDT 2002
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+
+tagging new Timestamp class
+    *
+------------------------------------------------------------
 User: burnett  Thu Aug 29 17:47:44 PDT 2002
 facilities/mgr
 
