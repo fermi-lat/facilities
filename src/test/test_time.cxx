@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.3 2002/08/29 22:50:30 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.4 2002/08/29 23:47:07 jrb Exp $
 /** @file test_meta.cxx
     Sample program to exercise calibration metadata database services
 */
@@ -8,18 +8,18 @@
 #include "facilities/Timestamp.h"
 
 
-int main(int argc, char* argv[]) {
+int main(int, char**) {
   using facilities::Timestamp;
   using facilities::BadTimeInput;
 
 
   try {
-    Timestamp t_ok("2001-11-10 08:00");
-    Timestamp t_none("2000-09-08 10:00");
+    //    Timestamp t_ok("2001-11-10 08:00");
+    //    Timestamp t_none("2000-09-08 10:00");
     long int       zero = 0;
-    long int       negValue = -2000;
+    //    long int       negValue = -2000;
     Timestamp unixCreation(zero);
-    Timestamp gmttest("1970-01-01 00:00");
+    //    Timestamp gmttest("1970-01-01 00:00");
     long int        aTime = 4000;
 
     Timestamp aTimestamp(aTime);
