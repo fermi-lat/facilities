@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: cohen  Fri Apr  1 14:29:10 PST 2005
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+adding a method to tokenize a string into a map
+
+    *
+------------------------------------------------------------
 User: cohen  Fri Apr  1 14:26:08 PST 2005
 facilities/src
 
