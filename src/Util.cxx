@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.15 2004/01/07 01:11:42 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.16 2004/01/12 21:01:26 jrb Exp $
 
 #include "facilities/Util.h"
 
@@ -131,6 +131,7 @@ namespace facilities {
       input = input.substr(j+1);
     }
     tokens.push_back(input);
+    if (tokens.back() == "") tokens.pop_back();
   }
 
   std::string Util::basename(const std::string& path) {
