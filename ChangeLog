@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Nov  1 15:16:20 PST 2004
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+Add new utility trimTrailing to trim trailing white space from a std::string
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Oct 21 09:19:23 PDT 2004
 facilities/doc
 
