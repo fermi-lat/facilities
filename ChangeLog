@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug 26 13:23:11 PDT 2002
+facilities/facilities
+
+Added Files:
+	Timestamp.h 
+Log Message:
+General purpose timestamp class for dates in interval [1902, 2038] and
+delta times < 68 years.  Supported formats include Julian date, 
+c run-time library (seconds from 1 jan 1970) and string.  Supported
+operations include comparisons, addition & subtraction where sensible.
+
+    *
+------------------------------------------------------------
 User: heather  Wed Apr 24 08:23:28 PDT 2002
 facilities/src
 
