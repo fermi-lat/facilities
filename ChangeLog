@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct 21 09:16:12 PDT 2004
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Fix long-standing bug in expandEnvVar
+
+    *
+------------------------------------------------------------
 User: jchiang  Wed Sep 29 11:10:50 PDT 2004
 facilities/src
 
