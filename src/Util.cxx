@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.16 2004/01/12 21:01:26 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.17 2004/09/29 18:10:50 jchiang Exp $
 
 #include "facilities/Util.h"
 
@@ -24,9 +24,9 @@ namespace facilities {
     unsigned clLen = closeDel.size();
     int nSuccess = 0;
         
-    int envStart = toExpand->find_first_of(openDel.c_str());
+    int envStart = toExpand->find(openDel.c_str());
     while (envStart != -1) {
-      int envEnd = toExpand->find_first_of(closeDel.c_str());
+      int envEnd = toExpand->find(closeDel.c_str());
             
       // add  characters to account for opening delimiter
       int afterBracket = envStart + opLen;
@@ -46,7 +46,7 @@ namespace facilities {
           throw Untranslatable(envVariable);
         }
       }
-      envStart = toExpand->find_first_of(openDel.c_str());
+      envStart = toExpand->find(openDel.c_str());
     }
     return nSuccess;
   }
