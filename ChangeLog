@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Jan 12 13:01:26 PST 2004
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Add utilities, stringToDouble and stringToInt,
+which throw WrongType when input string isn't suitable
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jan 12 13:01:01 PST 2004
 facilities/facilities
 
