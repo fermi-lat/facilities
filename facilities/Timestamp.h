@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.3 2002/08/29 22:49:45 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.4 2002/08/29 23:46:23 jrb Exp $
 #ifndef FACILITIES_TIMESTAMP_H
 #define FACILITIES_TIMESTAMP_H
 
@@ -170,7 +170,7 @@ namespace facilities {
   };
 
   /// Addition
-  static Timestamp operator+ (Timestamp a, 
+  inline Timestamp operator+ (Timestamp a, 
                               Timestamp b) {
     Timestamp t = a;
     return t += b;
@@ -178,7 +178,7 @@ namespace facilities {
 
 
   /// Subtraction
-  static Timestamp operator- (Timestamp a, 
+  inline Timestamp operator- (Timestamp a, 
                               Timestamp b) {
     Timestamp t = a;
     return t -= b;
