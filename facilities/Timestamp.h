@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.6 2002/11/19 21:59:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.7 2003/01/03 19:21:52 jrb Exp $
 #ifndef FACILITIES_TIMESTAMP_H
 #define FACILITIES_TIMESTAMP_H
 
@@ -77,11 +77,7 @@ namespace facilities {
     std::string getString() const;
 
     /// Return julian date
-    double      getJulian() const {
-      double julian = (m_time +  m_nano/inverseNano)/secPerDay;
-      julian += julian1970;
-      return julian;
-    }
+    double      getJulian() const;
 
     double      getNano() const {return m_nano;}
     long int    getClibTime() const {return m_time;}
