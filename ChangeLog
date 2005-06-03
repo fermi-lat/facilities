@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun  3 11:56:48 PDT 2005
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+Add function Util::expandEnvVarOS which uses standard OS defaults to 
+look for environment variables to translate
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r11, operation: add
 Package: facilities
