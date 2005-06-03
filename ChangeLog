@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Fri Jun  3 11:56:48 PDT 2005
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Add function Util::expandEnvVarOS which uses standard OS defaults to 
+look for environment variables to translate
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Jun  3 11:56:48 PDT 2005
 facilities/facilities
 
 Modified Files:
