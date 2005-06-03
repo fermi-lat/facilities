@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.20 2005/04/01 22:26:08 cohen Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.21 2005/04/05 06:01:15 jrb Exp $
 
 #include "facilities/Util.h"
 
@@ -51,6 +51,14 @@ namespace facilities {
     return nSuccess;
   }
     
+  int Util::expandEnvVarOS(std::string* toExpand) {
+#ifdef WIN32 
+    return expandEnvVar(toExpand, "%", "%");
+#else
+    return expandEnvVar(toExpand, "${", "}" );
+#endif
+  }
+
   const char* Util::itoa(int val, std::string &outStr) {
     // Purpose and Method:  Provide a standard routine to convert integers
     //    into std::string.  The method used depends upon the availability of
