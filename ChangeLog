@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Jul 31 14:40:14 PDT 2005
+facilities/src/test
+
+Modified Files:
+	test_time.cxx 
+Log Message:
+Base BadTimeInput exception class on std::exception
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Jul 31 14:40:13 PDT 2005
 facilities/facilities
 
