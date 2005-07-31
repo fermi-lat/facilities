@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Jul 31 14:40:13 PDT 2005
+facilities/facilities
+
+Modified Files:
+	Timestamp.h 
+Log Message:
+Base BadTimeInput exception class on std::exception
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Jul 31 14:17:28 PDT 2005
 facilities/src/test
 
