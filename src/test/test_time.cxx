@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.5 2002/09/19 17:16:30 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/test/test_time.cxx,v 1.6 2005/04/05 06:01:15 jrb Exp $
 /** @file test_meta.cxx
     Sample program to exercise calibration metadata database services
 */
@@ -14,10 +14,8 @@ int main(int, char**) {
 
 
   try {
-    //    Timestamp t_ok("2001-11-10 08:00");
-    //    Timestamp t_none("2000-09-08 10:00");
     long int       zero = 0;
-    //    long int       negValue = -2000;
+
     Timestamp unixCreation(zero);
     //    Timestamp gmttest("1970-01-01 00:00");
     long int        aTime = 4000;
@@ -47,9 +45,17 @@ int main(int, char**) {
 
     std::cout << "Supplied PDT string: " << PDTString << std::endl;
     std::cout << "Retrieved: " << PDTTime.getString() << std::endl;
+
+    std::string tooEarly("1770-12-17 12:00");
+    Timestamp  tooEarlyTime(tooEarly);
+    std::cout << "Should not have been able to create timestamp " 
+              << "with string representation" 
+              << tooEarlyTime.getString() << std::endl;
   }
-  catch (const BadTimeInput e) {
-    std::cout << "Exception message:  " << e.complaint << std::endl;
+  catch (std::exception& e) {
+    std::cout << "Exception message:  " << e.what() << std::endl;
+  //  catch (const BadTimeInput e) {
+  //    std::cout << "Exception message:  " << e.complaint << std::endl;
   }
 
   return 0;

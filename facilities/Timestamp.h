@@ -1,8 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.8 2004/08/03 22:23:22 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.9 2005/04/05 06:01:15 jrb Exp $
 #ifndef FACILITIES_TIMESTAMP_H
 #define FACILITIES_TIMESTAMP_H
 
 #include <string>
+#include <exception>
 
 namespace facilities {
 
@@ -10,13 +11,17 @@ namespace facilities {
       constructors, incompatible arguments for comparisons or
       arithmetic, or out of range results.
   */
-  class BadTimeInput {
+  class BadTimeInput : public std::exception {
   public:
-    BadTimeInput(std::string msg) : complaint(msg) {};
-    ~BadTimeInput() {};
+    BadTimeInput(std::string msg) : std::exception(), complaint(msg) {};
+    virtual ~BadTimeInput() throw() {};
     std::string complaint; 
+    virtual const char* what() const throw() {
+      return complaint.c_str();
+    }
 
-    BadTimeInput(const BadTimeInput &other) {complaint = other.complaint; };
+    BadTimeInput(const BadTimeInput &other) : std::exception() {
+      complaint = other.complaint; };
   }; 
 
 
