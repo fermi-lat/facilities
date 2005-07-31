@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Jul 31 14:17:28 PDT 2005
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Make exception classes Untranslatable, WrongType inherit from std::exception
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Jul 31 14:17:27 PDT 2005
 facilities/facilities
 
