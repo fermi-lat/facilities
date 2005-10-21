@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Thu Oct 20 17:48:30 PDT 2005
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Add new utility:  Util::stringToUnsigned
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Oct 20 17:48:30 PDT 2005
 facilities/facilities
 
 Modified Files:
