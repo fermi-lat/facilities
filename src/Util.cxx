@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.21 2005/04/05 06:01:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.22 2005/06/03 18:56:48 jrb Exp $
 
 #include "facilities/Util.h"
 
@@ -125,6 +125,21 @@ namespace facilities {
     int nItem = sscanf(inStr.c_str(), "%d %1s", &val, junk);
     if (nItem != 1) {
       throw WrongType(inStr, "int");
+    }
+    return val;
+  }
+
+  unsigned int Util::stringToUnsigned(const std::string& inStr) {
+    unsigned int  val;
+    char junk[3];
+    // %u format blithely wraps negative numbers around to positive ones, 
+    // so check for that first
+    if (inStr.find(std::string("-")) < inStr.size()) {
+      throw WrongType(inStr, "unsigned int");
+    }
+    int nItem = sscanf(inStr.c_str(), "%u %1s", &val, junk);
+    if (nItem != 1) {
+      throw WrongType(inStr, "unsigned int");
     }
     return val;
   }
