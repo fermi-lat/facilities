@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 24 15:24:26 PDT 2005
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Add new utility Util::utoa, provides string representation for unsigned int
+Also get rid of no-longer-necessary references to DEFECT_NO_STRINGSTREAM
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct 24 15:24:25 PDT 2005
 facilities/facilities
 
