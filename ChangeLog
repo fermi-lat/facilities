@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 11 16:39:09 PST 2006
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+Fix long-standing if relatively inoffensive bug in WrongType exception class
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceToolsv6r2, operation: add
 Package: facilities
