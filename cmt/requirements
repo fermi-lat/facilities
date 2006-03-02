@@ -4,14 +4,13 @@ version v2r12p4
 author T.Burnett <tburnett@u.washington.edu>
 use GlastPolicy
 
-
-apply_pattern package_include
-apply_pattern package_linkopts
-apply_pattern package_headers
+apply_pattern shared_library
 
 private
 
-library  facilities -no_share *.cxx \
+apply_pattern package_headers
+
+library  facilities  *.cxx \
 			${facilities_headers}
 
 application test_Util test/testUtil.cxx Util.cxx
