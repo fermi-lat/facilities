@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Mar  1 22:08:27 PST 2006
+facilities/cmt
+
+Modified Files:
+      Tag: MOOT
+	requirements 
+Log Message:
+Build shared library for MOOT
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r12p4, operation: add
 Package: facilities
