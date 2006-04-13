@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 13 12:47:47 PDT 2006
+facilities/facilities
+
+Modified Files:
+      Tag: MOOT
+	Util.h 
+Log Message:
+Add optional 'base' argument to Util::utoa to allow output in hex
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r12p4mt0, operation: add
 Package: facilities
