@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.23 2005/10/21 00:48:30 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.24 2005/10/24 22:24:26 jrb Exp $
 
 #include "facilities/Util.h"
 
@@ -79,12 +79,19 @@ namespace facilities {
     return outCharPtr;
   }
 
-  const char* Util::utoa(unsigned int val, std::string &outStr) {
+  const char* Util::utoa(unsigned int val, std::string &outStr, int base) {
     static char outCharPtr[20];
 
     std::ostringstream locStream;
     locStream.str("");
+    if (base == 16) {
+      locStream.fill('0');
+      locStream.width(8);
+      locStream.setf(std::ios::hex);
+      locStream.unsetf(std::ios::dec);
+    }
     locStream << val;
+
     outStr = locStream.str();
     strcpy(outCharPtr, outStr.c_str());
     return outCharPtr;
