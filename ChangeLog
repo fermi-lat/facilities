@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Apr 14 10:49:14 PDT 2006
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+Add optional arg. to Util::utoa to support hex output
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 13 12:48:20 PDT 2006
 facilities/src/test
 
