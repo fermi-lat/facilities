@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec  4 12:43:35 PST 2006
+facilities/facilities
+
+Modified Files:
+      Tag: MOOT
+	Util.h 
+Log Message:
+Add another couple little routines for trimming blanks
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r12p4mt1, operation: add
 Package: facilities
