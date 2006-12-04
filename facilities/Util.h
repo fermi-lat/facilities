@@ -94,10 +94,10 @@ namespace facilities {
     */
     static const char* itoa(int val, std::string &outStr);
     /**
-      Given unsigned, convert to output string.  If @arg base is 16,
-      output 8 hex digits; else output decimal.
+      Given unsigned, convert to output string. If optional  @arg base
+      is 16, format as 8 hex digits; else output decimal.
     */
-    static const char* utoa(unsigned int val, std::string &outStr, 
+    static const char* utoa(unsigned int val, std::string &outStr,
                             int base=10);
 
     /// converts an std::string to an integer
@@ -161,11 +161,25 @@ namespace facilities {
     static std::string basename(const std::string &path);
 
     /**
+       Trim leading white space characters from the supplied string.
+       White space characters for this purpose are blank, carriage return,
+       line feed and form feed.  Return # of characters trimmed.
+    */
+    static unsigned trimLeading(std::string* toTrim);
+
+    /**
        Trim trailing white space characters from the supplied string.
        White space characters for this purpose are blank, carriage return,
        line feed and form feed.  Return # of characters trimmed.
     */
     static unsigned trimTrailing(std::string* toTrim);
+
+    /**
+       Trim leading+trailing white space characters from the supplied string.
+       White space characters for this purpose are blank, carriage return,
+       line feed and form feed.  Return # of characters trimmed.
+    */
+    static unsigned trim(std::string* toTrim);
   };
 }
 
