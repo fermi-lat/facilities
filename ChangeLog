@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec  4 12:43:43 PST 2006
+facilities/src
+
+Modified Files:
+      Tag: MOOT
+	Util.cxx 
+Log Message:
+Add another couple little routines for trimming blanks
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec  4 12:43:35 PST 2006
 facilities/facilities
 
