@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec  4 15:32:37 PST 2006
+facilities/cmt
+
+Modified Files:
+      Tag: MOOT
+	requirements 
+Log Message:
+Get ready for tag v2r12p5m0
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r12p5, operation: add
 Package: facilities
