@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec  4 15:29:03 PST 2006
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+(for David Decotigny) Add more blank-trimming utilities
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec  4 15:28:58 PST 2006
 facilities/facilities
 
