@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.24 2005/10/24 22:24:26 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.24.8.2 2006/12/04 20:43:43 jrb Exp $
 
 #include "facilities/Util.h"
 
@@ -194,6 +194,16 @@ namespace facilities {
      return *(names.end() - 1);
   }
 
+
+  unsigned Util::trimLeading(std::string* toTrim) {
+    std::string::size_type first_char = toTrim->find_first_not_of(" \r\n\t\f");
+    if (first_char == std::string::npos)
+      return 0;
+    *toTrim = toTrim->substr(first_char, std::string::npos);
+    return first_char;
+  }
+
+
   unsigned Util::trimTrailing(std::string* toTrim) {
     static const char blank=' ';
     static const char LF=0xA;    // new line
@@ -225,6 +235,13 @@ namespace facilities {
 
     return nTrimmed;
   }
+
+
+  unsigned Util::trim(std::string* toTrim) {
+    return Util::trimTrailing(toTrim)
+           + Util::trimLeading(toTrim);
+  }
+
 
 }
 
