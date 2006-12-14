@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: decot  Thu Dec 14 15:06:53 PST 2006
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+additional unit tests for trimLeading
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r12p5m0, operation: add
 Package: facilities
