@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul 24 11:00:38 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+No -no_share !
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r14, operation: add
 Package: facilities
