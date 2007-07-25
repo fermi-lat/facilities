@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Jul 24 19:03:41 PDT 2007
+facilities/src
+
+Modified Files:
+	XGetopt.cxx 
+Log Message:
+put getopt in facilities namespace and introduce pattern to force windows to find externals
+    *
+------------------------------------------------------------
+User: heather  Tue Jul 24 19:03:41 PDT 2007
 facilities/facilities
 
 Modified Files:
