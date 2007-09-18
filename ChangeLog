@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Tue Sep 18 15:25:21 PDT 2007
+facilities/src/test
+
+Added Files:
+	test_env.cxx 
+Log Message:
+Added missing test app for environment
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16, operation: add
 Package: facilities
