@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: golpa  Tue Sep 18 15:27:13 PDT 2007
-facilities/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-Add missing test app and tag
-    *
-------------------------------------------------------------
-User: golpa  Tue Sep 18 15:27:13 PDT 2007
-facilities/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-Add missing test app and tag
-    *
-------------------------------------------------------------
 User: golpa  Tue Sep 18 15:25:21 PDT 2007
 facilities/src/test
 
