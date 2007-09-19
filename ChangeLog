@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Sep 18 18:02:38 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+1. Put the class in namespace facilities
+2. Do things assuming CMT file hierarchy for now
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Sep 18 18:02:05 PDT 2007
 facilities/facilities
 
