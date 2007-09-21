@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Fri Sep 21 11:53:06 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Fixed missing ;
+    *
+------------------------------------------------------------
+User: golpa  Fri Sep 21 11:53:06 PDT 2007
 facilities/doc
 
 Modified Files:
