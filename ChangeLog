@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Fri Sep 21 09:09:32 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Fix for windows lack of setenv()
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p2, operation: add
 Package: facilities
