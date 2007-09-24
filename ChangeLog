@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: golpa  Mon Sep 24 08:29:07 PDT 2007
-facilities/src
-
-Modified Files:
-	commonUtilities.cxx 
-Log Message:
-Use _putenv in windows
-    *
-------------------------------------------------------------
-User: golpa  Mon Sep 24 08:29:07 PDT 2007
-facilities/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-Use _putenv in windows
-    *
-------------------------------------------------------------
-User: golpa  Mon Sep 24 08:29:07 PDT 2007
-facilities/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-Use _putenv in windows
-    *
-------------------------------------------------------------
 TAG
 Tag name: v2r16p4, operation: add
 Package: facilities
