@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Mon Sep 24 08:29:07 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Use _putenv in windows
+    *
+------------------------------------------------------------
+User: golpa  Mon Sep 24 08:29:07 PDT 2007
 facilities/doc
 
 Modified Files:
