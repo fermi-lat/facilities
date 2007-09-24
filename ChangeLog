@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Sep 24 08:29:07 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use _putenv in windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p4, operation: add
 Package: facilities
