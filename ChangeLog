@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Sep 24 21:21:24 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added doxygen documentation. Taggin v2r16p6
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p5, operation: add
 Package: facilities
