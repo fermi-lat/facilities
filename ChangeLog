@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: golpa  Wed Sep 26 12:04:42 PDT 2007
-facilities/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-Added new funciton to append paths together using correct path separator
-    *
-------------------------------------------------------------
 TAG
 Tag name: v2r16p6, operation: add
 Package: facilities
