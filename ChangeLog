@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Wed Sep 26 12:04:43 PDT 2007
+facilities/facilities
+
+Modified Files:
+	commonUtilities.h 
+Log Message:
+Added new funciton to append paths together using correct path separator
+    *
+------------------------------------------------------------
+User: golpa  Wed Sep 26 12:04:43 PDT 2007
 facilities/doc
 
 Modified Files:
