@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Fri Sep 28 18:03:38 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fixed typo with how paths are joined in unix style
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p7, operation: add
 Package: facilities
