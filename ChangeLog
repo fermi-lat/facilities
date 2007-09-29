@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Fri Sep 28 18:03:38 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Fixed typo with how paths are joined in unix style
+    *
+------------------------------------------------------------
+User: golpa  Fri Sep 28 18:03:38 PDT 2007
 facilities/cmt
 
 Modified Files:
