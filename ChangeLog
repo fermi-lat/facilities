@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Thu Oct  4 14:02:12 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Fix for rh9
+    *
+------------------------------------------------------------
+User: golpa  Thu Oct  4 14:02:12 PDT 2007
 facilities/cmt
 
 Modified Files:
