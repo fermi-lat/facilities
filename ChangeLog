@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Oct  4 10:35:40 PDT 2007
+facilities/facilities
+
+Modified Files:
+	commonUtilities.h 
+Log Message:
+New function to set up the environment variables prior to execution
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p8, operation: add
 Package: facilities
