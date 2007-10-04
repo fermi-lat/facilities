@@ -1,4 +1,49 @@
 ------------------------------------------------------------
+TAG
+Tag name: v2r16p10, operation: add
+Package: facilities
+User: golpa  Thu Oct  4 14:02:28 2007
+Files:
+  facilities/.cvsignore  1.10
+  facilities/ChangeLog  1.238
+  facilities/cmt/.cvsignore  1.1
+  facilities/cmt/requirements  1.37
+  facilities/doc/release.notes  1.38
+  facilities/doc/index.html  1.1
+  facilities/facilities/binarystream.h  1.1.1.1
+  facilities/facilities/SimpleEvent.h  1.1.1.1
+  facilities/facilities/Observer.h  1.2
+  facilities/facilities/Clock.h  1.3
+  facilities/facilities/Utility.h  1.1.1.1
+  facilities/facilities/filemap.h  1.1.1.1
+  facilities/facilities/error.h  1.1.1.1
+  facilities/facilities/commonUtilities.h  1.5
+  facilities/facilities/XGetopt.h  1.2
+  facilities/facilities/ScheduledEvent.h  1.3
+  facilities/facilities/Commissioner.h  1.1.1.1
+  facilities/facilities/Converter.h  1.1.1.1
+  facilities/facilities/environmentCallback.h  1.1
+  facilities/facilities/FIFO.h  1.1.1.1
+  facilities/facilities/Adapter.h  1.1.1.1
+  facilities/facilities/Util.h  1.20
+  facilities/facilities/bpkt_streams.h  1.1.1.1
+  facilities/facilities/Timestamp.h  1.10
+  facilities/facilities/Scheduler.h  1.3
+  facilities/facilities/bitmanip.h  1.2
+  facilities/src/XGetopt.cxx  1.2
+  facilities/src/ScheduledEvent.cxx  1.1.1.1
+  facilities/src/mainpage.h  1.2
+  facilities/src/Timestamp.cxx  1.7
+  facilities/src/commonUtilities.cxx  1.9
+  facilities/src/Util.cxx  1.26
+  facilities/src/Scheduler.cxx  1.1.1.1
+  facilities/src/Clock.cxx  1.1.1.1
+  facilities/src/test/test_time.cxx  1.7
+  facilities/src/test/testUtil.cxx  1.24
+  facilities/src/test/test_env.cxx  1.3
+
+    *
+------------------------------------------------------------
 User: golpa  Thu Oct  4 14:02:12 PDT 2007
 facilities/src
 
