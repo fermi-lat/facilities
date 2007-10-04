@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Oct  4 10:39:55 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Tag new release capable of setting up user environments
+    *
+------------------------------------------------------------
 User: golpa  Thu Oct  4 10:35:40 PDT 2007
 facilities/src/test
 
