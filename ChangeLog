@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Oct  4 14:02:12 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix for rh9
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p9, operation: add
 Package: facilities
