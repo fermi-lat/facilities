@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Wed Oct 10 07:52:00 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Bug fixes to setupEnvironment function
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p11, operation: add
 Package: facilities
