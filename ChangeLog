@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Wed Oct 10 07:52:01 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Bug fixes to setupEnvironment function
+    *
+------------------------------------------------------------
 User: golpa  Wed Oct 10 07:52:00 PDT 2007
 facilities/cmt
 
