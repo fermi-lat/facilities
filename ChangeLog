@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Wed Oct 24 10:10:29 PDT 2007
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Bug fix so facilities doesn't try to set variables for non-existing packages
+    *
+------------------------------------------------------------
 User: golpa  Wed Oct 24 10:10:28 PDT 2007
 facilities/cmt
 
