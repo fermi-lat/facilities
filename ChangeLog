@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Wed Oct 24 10:10:28 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Bug fix so facilities doesn't try to set variables for non-existing packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p12, operation: add
 Package: facilities
