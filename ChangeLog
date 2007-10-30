@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Oct 29 20:24:59 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+changes to allow for mac compile
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p13, operation: add
 Package: facilities
