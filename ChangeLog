@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Wed Oct 31 12:13:32 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Swigify facilities
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p14, operation: add
 Package: facilities
