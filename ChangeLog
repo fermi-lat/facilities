@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Wed Oct 31 12:13:32 PDT 2007
+facilities/src
+
+Added Files:
+	py_facilities.in 
+Log Message:
+Swigify facilities
+    *
+------------------------------------------------------------
+User: golpa  Wed Oct 31 12:13:32 PDT 2007
 facilities/cmt
 
 Modified Files:
