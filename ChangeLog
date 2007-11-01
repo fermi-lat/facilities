@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: golpa  Thu Nov  1 10:19:43 PDT 2007
-facilities/python
-
-Added Files:
-	facilities.py 
-Log Message:
-added python script to setup envorinment automatically
-    *
-------------------------------------------------------------
-User: golpa  Thu Nov  1 10:19:43 PDT 2007
-facilities/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-added python script to setup envorinment automatically
-    *
-------------------------------------------------------------
 User: golpa  Thu Nov  1 10:18:23 PDT 2007
 facilities/python
 
