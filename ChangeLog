@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Fri Nov  2 08:24:02 PDT 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add python directory to the pythonpath
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p16, operation: add
 Package: facilities
