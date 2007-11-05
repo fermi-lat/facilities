@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Nov  5 11:41:01 PST 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+changes so that SwigPolicy plays nice with RootcintPolicy
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p17, operation: add
 Package: facilities
