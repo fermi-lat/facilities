@@ -1,15 +1,18 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.24.8.2 2006/12/04 20:43:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.26 2006/12/04 23:29:03 jrb Exp $
 
 #include "facilities/Util.h"
 
-//#ifdef DEFECT_NO_STRINGSTREAM
-//#include <strstream>
-//#else
 #include <sstream>
-//#endif
 
 #include <iostream>
 #include <cstdio>
+
+#ifdef WIN32
+#include <WinBase.h>
+#else
+#include <unistd.h>
+#endif
+
 
 /** @file Util.cxx 
 @author J. Bogart
@@ -242,6 +245,17 @@ namespace facilities {
            + Util::trimLeading(toTrim);
   }
 
+  void Util::gsleep(unsigned milli) {
+    // System routines available vary with OS
+#ifdef WIN32 
+    Sleep(milli);
+#else
+    unsigned sec = milli/((unsigned) 1000);
+    unsigned micro = 1000 * (milli - 1000*sec);
+    if (sec) sleep(sec);
+    usleep(micro);
+#endif
+  }
 
 }
 
