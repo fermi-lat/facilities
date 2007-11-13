@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Mon Nov 12 17:16:14 PST 2007
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Even though documentation says to include WinBase.h for system Sleep( ) routine,
+(and it does contain the prototype)
+it seems one actually needs to include Windows.h - otherwise compile fails
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p19, operation: add
 Package: facilities
