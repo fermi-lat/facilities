@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.26 2006/12/04 23:29:03 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.27 2007/11/09 00:19:53 jrb Exp $
 
 #include "facilities/Util.h"
 
@@ -8,7 +8,10 @@
 #include <cstdio>
 
 #ifdef WIN32
-#include <WinBase.h>
+// For Sleep( ).   Not happy about this, but can't find anything else 
+// that works.  All that's needed is WinBase.h, but compile fails 
+// when that's all that is included.
+#include <Windows.h>
 #else
 #include <unistd.h>
 #endif
