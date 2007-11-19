@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Nov 19 10:16:01 PST 2007
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+bug fix when env variable includes ROOT in the middle
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16p20, operation: add
 Package: facilities
