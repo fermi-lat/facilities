@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.27 2007/11/09 00:19:53 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.28 2007/11/13 01:16:14 jrb Exp $
 
 #include "facilities/Util.h"
 
@@ -157,6 +157,22 @@ namespace facilities {
     }
     return val;
   }
+
+  unsigned long long Util::stringToUll(const std::string& inStr) {
+    unsigned long long  val;
+    char junk[3];
+    // %u format blithely wraps negative numbers around to positive ones, 
+    // so check for that first
+    if (inStr.find(std::string("-")) < inStr.size()) {
+      throw WrongType(inStr, "unsigned long long");
+    }
+    int nItem = sscanf(inStr.c_str(), "%llu %1s", &val, junk);
+    if (nItem != 1) {
+      throw WrongType(inStr, "unsigned long long");
+    }
+    return val;
+  }
+
 
   void Util::stringTokenize(std::string input, const std::string& delimiters,
                             std::vector<std::string>& tokens, bool clear) {
