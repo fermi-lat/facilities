@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.28 2007/11/13 01:16:14 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.29 2008/01/18 16:11:53 heather Exp $
 
 #include "facilities/Util.h"
 
@@ -151,7 +151,13 @@ namespace facilities {
     if (inStr.find(std::string("-")) < inStr.size()) {
       throw WrongType(inStr, "unsigned int");
     }
-    int nItem = sscanf(inStr.c_str(), "%u %1s", &val, junk);
+    int nItem;
+    if (inStr.find(std::string("0x")) < inStr.size()) {
+      nItem = sscanf(inStr.c_str(), "%x %1s", &val, junk);
+    }
+    else {
+      nItem = sscanf(inStr.c_str(), "%u %1s", &val, junk);
+    }
     if (nItem != 1) {
       throw WrongType(inStr, "unsigned int");
     }
@@ -166,7 +172,13 @@ namespace facilities {
     if (inStr.find(std::string("-")) < inStr.size()) {
       throw WrongType(inStr, "unsigned long long");
     }
-    int nItem = sscanf(inStr.c_str(), "%llu %1s", &val, junk);
+    int nItem;
+    if (inStr.find(std::string("0x")) < inStr.size()) {
+      nItem = sscanf(inStr.c_str(), "%llx %1s", &val, junk);
+    } 
+    else {
+      nItem = sscanf(inStr.c_str(), "%llu %1s", &val, junk);
+    }
     if (nItem != 1) {
       throw WrongType(inStr, "unsigned long long");
     }
