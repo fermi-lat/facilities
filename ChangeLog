@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: panetta  Fri Jan 25 15:28:55 PST 2008
+facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+Fix stringToUll and stringToUnsigned to allow hex input
+    *
+------------------------------------------------------------
 User: panetta  Fri Jan 25 15:28:54 PST 2008
 facilities/doc
 
