@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: golpa  Fri Jan 25 13:19:52 PST 2008
-facilities/src
-
-Modified Files:
-	commonUtilities.cxx 
-Log Message:
-suppress error output
-    *
-------------------------------------------------------------
-User: golpa  Fri Jan 25 13:19:52 PST 2008
-facilities/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-suppress error output
-    *
-------------------------------------------------------------
 TAG
 Tag name: v2r17, operation: add
 Package: facilities
