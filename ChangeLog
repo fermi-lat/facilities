@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: panetta  Fri Jan 25 15:28:54 PST 2008
+facilities/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fix stringToUll and stringToUnsigned to allow hex input
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-17-01, operation: add
 Package: facilities
