@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Thu Feb 14 14:25:19 PST 2008
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Added code to support SCons
+    *
+------------------------------------------------------------
+User: golpa  Thu Feb 14 14:25:19 PST 2008
 facilities/cmt
 
 Modified Files:
