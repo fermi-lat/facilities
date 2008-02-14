@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Feb 14 14:26:07 PST 2008
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+requirements file tag wasn't in sync with cvs tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r17p2, operation: add
 Package: facilities
