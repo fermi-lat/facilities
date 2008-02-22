@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Feb 21 17:30:26 PST 2008
+facilities
+
+Modified Files:
+	SConscript facilitiesLib.py 
+Log Message:
+Added missing test apps
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-17-03, operation: add
 Package: facilities
