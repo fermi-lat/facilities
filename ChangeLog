@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Feb 25 19:15:14 PST 2008
+ScienceTools-scons/facilities
+
+Modified Files:
+	facilitiesLib.py SConscript 
+Log Message:
+Set lib dependencies up for when building libraries
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-17-03, operation: mov
 Package: facilities
