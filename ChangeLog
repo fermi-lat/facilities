@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glast  Thu Mar 20 13:03:42 PDT 2008
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fixed pythonpath for windows. Tagging v2r17p5
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-17-04, operation: add
 Package: facilities
