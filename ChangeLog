@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Mar 24 16:04:29 PDT 2008
+ScienceTools-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+made facilities a shared library in SCons, SConscript file now creates a config.h, commonutilities uses config.h to create PACKAGEXMLPATH env variables at runtime. Tagging v2r17p6
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-17-05, operation: add
 Package: facilities
