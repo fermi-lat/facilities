@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Apr  3 12:20:53 PDT 2008
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add expandEnvVarList
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-17-06, operation: add
 Package: facilities
