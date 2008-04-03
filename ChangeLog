@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Apr  3 12:20:53 PDT 2008
+facilities/facilities
+
+Modified Files:
+	Util.h 
+Log Message:
+add expandEnvVarList
+    *
+------------------------------------------------------------
+User: heather  Thu Apr  3 12:20:53 PDT 2008
 facilities/doc
 
 Modified Files:
