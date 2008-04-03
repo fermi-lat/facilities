@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.29 2008/01/18 16:11:53 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.30 2008/01/25 23:28:55 panetta Exp $
 
 #include "facilities/Util.h"
 
@@ -64,6 +64,30 @@ namespace facilities {
     return expandEnvVar(toExpand, "${", "}" );
 #endif
   }
+
+  int Util::expandEnvVarList(std::vector<std::string> toExpand,
+                             std::vector<std::string> &result,
+                             const std::string &delimiters) {
+
+   try {
+       std::vector<std::string>::const_iterator listIt, listIt2;
+       // iterate over the elements in the vector of strings
+       for (listIt = toExpand.begin(); listIt != toExpand.end(); listIt++) {
+           std::string tempStr = *listIt;
+           int num = expandEnvVar(&tempStr);
+           std::vector<std::string> tempList;
+           // find all the individual strings
+           stringTokenize(tempStr, delimiters, tempList);
+           // Save all the strings
+           for (listIt2 = tempList.begin(); listIt2 != tempList.end(); listIt2++) 
+               result.push_back(*listIt2);
+        }
+   } catch(std::exception& e) {
+       throw(e);
+   } catch(...) {
+       throw;
+   }
+   }
 
   const char* Util::itoa(int val, std::string &outStr) {
     // Purpose and Method:  Provide a standard routine to convert integers
