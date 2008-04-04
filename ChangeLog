@@ -2,6 +2,14 @@
 TAG
 Tag name: facilities-02-18-00, operation: add
 Package: facilities
+User: glastrm  Thu Apr  3 19:30:48 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-00, operation: add
+Package: facilities
 User: glastrm  Thu Apr  3 19:30:10 2008
 Files:
   facilities/.cvsignore  1.10
