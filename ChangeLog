@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Tue Apr 22 21:15:35 PDT 2008
+ScienceTools-scons/facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+setupEnvironment now sets up <PACKAGE>DATAPATH
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-00, operation: add
 Package: facilities
