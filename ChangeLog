@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: glastrm  Tue Apr 22 21:15:36 PDT 2008
+ScienceTools-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+setupEnvironment now sets up <PACKAGE>DATAPATH
+    *
+------------------------------------------------------------
+User: glastrm  Tue Apr 22 21:15:36 PDT 2008
 ScienceTools-scons/facilities/doc
 
 Modified Files:
