@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Thu Jun 19 15:31:57 PDT 2008
+ScienceTools-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+Added Author and Version fields
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-01, operation: add
 Package: facilities
