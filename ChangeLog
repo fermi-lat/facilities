@@ -1,5 +1,95 @@
 ------------------------------------------------------------
 TAG
+Tag name: facilities-02-18-02, operation: mov
+Package: facilities
+User: glast  Fri Jun 20 13:59:42 2008
+Files:
+di: /nfs/slac/g/glast/ground/cvs/facilities  where: 29
+  facilities/.cvsignore  1.10
+di: /nfs/slac/g/glast/ground/cvs/facilities  where: 29
+  facilities/ChangeLog  1.335
+di: /nfs/slac/g/glast/ground/cvs/facilities  where: 29
+  facilities/facilitiesLib.py  1.3
+di: /nfs/slac/g/glast/ground/cvs/facilities  where: 29
+  facilities/SConscript  1.5
+di: /nfs/slac/g/glast/ground/cvs/facilities/cmt  where: 29
+  facilities/cmt/.cvsignore  1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/cmt  where: 29
+  facilities/cmt/requirements  1.58
+di: /nfs/slac/g/glast/ground/cvs/facilities/doc  where: 29
+  facilities/doc/release.notes  1.45
+di: /nfs/slac/g/glast/ground/cvs/facilities/doc  where: 29
+  facilities/doc/index.html  1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/binarystream.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/SimpleEvent.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Observer.h  1.2
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Clock.h  1.3
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Utility.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/filemap.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/error.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/commonUtilities.h  1.5
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/XGetopt.h  1.2
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/ScheduledEvent.h  1.3
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Commissioner.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Converter.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/environmentCallback.h  1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/FIFO.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Adapter.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Util.h  1.23
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/bpkt_streams.h  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Scheduler.h  1.3
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/Timestamp.h  1.10
+di: /nfs/slac/g/glast/ground/cvs/facilities/facilities  where: 29
+  facilities/facilities/bitmanip.h  1.2
+di: /nfs/slac/g/glast/ground/cvs/facilities/python  where: 29
+  facilities/python/facilities.py  1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/XGetopt.cxx  1.2
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/ScheduledEvent.cxx  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/mainpage.h  1.2
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/Timestamp.cxx  1.7
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/commonUtilities.cxx  1.19
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/Util.cxx  1.32
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/Scheduler.cxx  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/Clock.cxx  1.1.1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/src  where: 29
+  facilities/src/py_facilities.in  1.1
+di: /nfs/slac/g/glast/ground/cvs/facilities/src/test  where: 29
+  facilities/src/test/test_time.cxx  1.7
+di: /nfs/slac/g/glast/ground/cvs/facilities/src/test  where: 29
+  facilities/src/test/testUtil.cxx  1.26
+di: /nfs/slac/g/glast/ground/cvs/facilities/src/test  where: 29
+  facilities/src/test/test_env.cxx  1.3
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v2r18p1, operation: mov
 Package: facilities
 User: glastrm  Thu Jun 19 15:32:17 2008
