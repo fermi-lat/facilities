@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Wed Oct 29 14:44:21 PDT 2008
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Add third option for HEADAS directory structure
+    *
+------------------------------------------------------------
 User: glastrm  Wed Sep 24 14:45:50 PDT 2008
 ScienceTools-scons/facilities/src
 
