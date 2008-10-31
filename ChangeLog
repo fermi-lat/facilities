@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 TAG
+Tag name: v2r18p2, operation: mov
+Package: facilities
+User: glastrm  Fri Oct 31 09:30:51 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: facilities-02-18-02, operation: add
 Package: facilities
 User: glastrm  Fri Oct 31 09:30:17 2008
