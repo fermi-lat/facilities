@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Fri Nov 14 10:13:30 PST 2008
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Fix xml and data path
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-02, operation: add
 Package: facilities
