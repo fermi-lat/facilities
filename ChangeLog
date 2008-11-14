@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Fri Nov 14 10:39:12 PST 2008
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+fixed typo in HEADAS section of the code
+    *
+------------------------------------------------------------
 User: golpa  Fri Nov 14 10:13:30 PST 2008
 facilities/src
 
