@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-03, operation: mov
+Package: facilities
+User: glast  Mon Dec  8 14:41:30 2008
+Files:
+  facilities/SConscript  1.10
+  facilities/SConscript  1.10
+
+    *
+------------------------------------------------------------
 User: ecephas  Mon Dec  8 13:40:30 PST 2008
 GlastRelease-scons/facilities
 
