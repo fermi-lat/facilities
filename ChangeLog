@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-15-49-00, operation: add
+Package: facilities
+User: ecephas  Fri Jan 23 09:17:44 2009
+Files:
+  facilities/src/py_facilities.i  1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: facilities-02-18-01, operation: mov
 Package: facilities
 User: glastrm  Thu Jan 22 16:31:49 2009
