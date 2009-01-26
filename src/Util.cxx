@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.31 2008/04/03 19:20:53 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.32 2008/04/04 02:25:18 heather Exp $
 
 #include "facilities/Util.h"
 
@@ -148,11 +148,18 @@ namespace facilities {
   }  
 
   double Util::stringToDouble(const std::string& inStr) {
+    // Extra test is because OSX Leopard converts 3. to a double (3)
+    // and a string (.) while everyone else just gives a double (3.)
     double val;
     char  junk[3];
     int nItem = sscanf(inStr.c_str(), "%lg %1s", &val, junk);
-    if (nItem != 1) {
+    if ((nItem != 1) && (nItem != 2)) {
       throw WrongType(inStr, "double");
+    }
+    if (nItem == 2) {
+      if (junk[0]!='.'){
+	throw WrongType(inStr, "double");
+      }
     }
     return val;
   }
