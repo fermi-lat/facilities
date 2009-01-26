@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: vernaleo  Mon Jan 26 09:21:48 PST 2009
+facilities/src/test
+
+Modified Files:
+	testUtil.cxx 
+Log Message:
+Added fix for double conversion problem on OSX leopard along with test case and fixed 32bit linux output bug in test code.
+    *
+------------------------------------------------------------
+User: vernaleo  Mon Jan 26 09:21:48 PST 2009
 facilities/src
 
 Modified Files:
