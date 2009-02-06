@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Fri Feb  6 08:43:36 PST 2009
+ScienceTools-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+adjusted swig library convention
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-10-00, operation: add
 Package: facilities
