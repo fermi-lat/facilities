@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.13 2009/02/06 16:43:36 glastrm Exp $
+# $Id: SConscript,v 1.14 2009/04/06 17:20:00 glastrm Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-18-04
 import os
@@ -25,7 +25,7 @@ facilitiesLib = libEnv.SharedLibrary('facilities', listFiles(['src/*.cxx']))
 
 swigEnv.Tool('facilitiesLib')
 swigEnv.Tool('addLibrary', library=swigEnv['pythonLibs'])
-lib_pyFacilities = swigEnv.SharedLibrary('_py_facilities', 'src/py_facilities.i')
+lib_pyFacilities = swigEnv.SharedLibrary('_py_facilities', 'src/py_facilities.i', SHLIBPREFIX = '')
 
 progEnv.Tool('facilitiesLib')
 test_time = progEnv.Program('test_time', ['src/test/test_time.cxx'])
