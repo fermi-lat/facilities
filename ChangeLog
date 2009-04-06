@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Apr  6 10:20:00 PDT 2009
+ScienceTools-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+Fix library name created for swig
+    *
+------------------------------------------------------------
 User: glastrm  Mon Apr  6 10:19:16 PDT 2009
 ScienceTools-scons/facilities/src
 
