@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Apr  6 10:22:48 PDT 2009
+ScienceTools-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+Fix library name created for swig
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-04, operation: mov
 Package: facilities
