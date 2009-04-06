@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Apr  6 10:19:16 PDT 2009
+ScienceTools-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+On mac environ isn't defined
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-11-00, operation: add
 Package: facilities
