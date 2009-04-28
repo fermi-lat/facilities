@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Tue Apr 28 13:43:41 PDT 2009
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Setup the TIMING_DIR variable for use with SCons and the HEADAS builds. Tagging as v2r18p5
+    *
+------------------------------------------------------------
+User: golpa  Tue Apr 28 13:43:41 PDT 2009
 facilities/cmt
 
 Modified Files:
