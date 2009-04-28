@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Tue Apr 28 13:43:41 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+Setup the TIMING_DIR variable for use with SCons and the HEADAS builds. Tagging as v2r18p5
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r18p4, operation: mov
 Package: facilities
