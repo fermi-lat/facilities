@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Id: SConscript,v 1.15 2009/04/06 17:22:48 glastrm Exp $
+# $Id: SConscript,v 1.16 2009/04/28 20:43:40 golpa Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
-# Version: facilities-02-18-05
+# Version: facilities-02-18-06
 import os
 Import('baseEnv')
 Import('listFiles')
