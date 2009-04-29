@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glast  Wed Apr 29 14:23:51 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+TIMING_DIR directory was missing part of the path. Tagging v2r18p6
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-05, operation: add
 Package: facilities
