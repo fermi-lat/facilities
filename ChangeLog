@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Fri May  1 12:51:13 PDT 2009
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+define EXTFILESSYS when in SCons or HEADAS mode. tagging v2r18p7
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-06, operation: add
 Package: facilities
