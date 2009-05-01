@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Fri May  1 12:53:31 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+update tag for SConscript
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-07, operation: add
 Package: facilities
