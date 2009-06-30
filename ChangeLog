@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Tue Jun 30 12:05:50 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+create a loadable module for swig
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-07, operation: mov
 Package: facilities
