@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Tue Jun 30 10:36:14 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+register python module for facilities
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-15-02, operation: add
 Package: facilities
