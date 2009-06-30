@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.17 2009/04/29 21:23:50 glast Exp $
+# $Id: SConscript,v 1.18 2009/05/01 19:53:31 glastrm Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-18-07
 import os
@@ -35,7 +35,8 @@ test_Util = progEnv.Program('test_Util',[ 'src/test/testUtil.cxx'])
 progEnv.Tool('registerObjects', package = 'facilities',
              libraries = [facilitiesLib, lib_pyFacilities],
              testApps = [test_time, test_env, test_Util],
-             includes = listFiles(['facilities/*.h']))
+             includes = listFiles(['facilities/*.h']),
+             python = ['python/facilities.py'])
 
 
 
