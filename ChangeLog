@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: v2r18p7, operation: mov
+Package: facilities
+User: glastrm  Mon Jul  6 10:46:47 2009
+Files:
+  facilities/SConscript  1.22
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v2r18p7, operation: add
 Package: facilities
 User: glastrm  Mon Jul  6 10:46:35 2009
