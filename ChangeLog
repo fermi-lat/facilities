@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul  8 16:52:45 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+call registerTargets rather than registerObjects
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-07, operation: mov
 Package: facilities
