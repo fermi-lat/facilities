@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.21 2009/07/01 17:47:26 golpa Exp $
+# $Id: SConscript,v 1.22 2009/07/06 17:46:03 glastrm Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-18-07
 import os
@@ -32,13 +32,20 @@ test_time = progEnv.Program('test_time', ['src/test/test_time.cxx'])
 test_env = progEnv.Program('test_env', ['src/test/test_env.cxx'])
 test_Util = progEnv.Program('test_Util',[ 'src/test/testUtil.cxx'])
 
-progEnv.Tool('registerObjects', package = 'facilities',
-             libraries = [facilitiesLib, lib_pyFacilities],
-             testApps = [test_time, test_env, test_Util],
+#progEnv.Tool('registerObjects', package = 'facilities',
+#             libraries = [facilitiesLib, lib_pyFacilities],
+#             testApps = [test_time, test_env, test_Util],
+#             includes = listFiles(['facilities/*.h']),
+#             python = ['python/facilities.py', 'src/py_facilities.py'])
+
+
+progEnv.Tool('registerTargets', package = 'facilities',
+             libraryCxts = [[facilitiesLib, libEnv]],
+             swigLibraryCxts = [[lib_pyFacilities, swigEnv]],
+             testAppCxts = [[test_time, progEnv], [test_env,progEnv],
+                            [test_Util,progEnv]],
              includes = listFiles(['facilities/*.h']),
              python = ['python/facilities.py', 'src/py_facilities.py'])
-
-
 
 
 
