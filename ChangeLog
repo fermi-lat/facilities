@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Tue Jul 28 14:03:08 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+test tagging to test out the new style to old styler tag converter
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-09, operation: add
 Package: facilities
