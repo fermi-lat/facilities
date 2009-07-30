@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: elwinter  Thu Jul 30 10:02:04 PDT 2009
+facilities/src
+
+Modified Files:
+      Tag: ScienceToolsv9r15p2
+	commonUtilities.cxx 
+Log Message:
+Imported changes from FSSC.
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-09, operation: add
 Package: facilities
