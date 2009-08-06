@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  6 10:45:07 PDT 2009
+GlastRelease-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+Use SwigLibrary function to make Swig library. Otherwise we run into
+problems on Windows with lack of debug python library.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-15-04, operation: add
 Package: facilities
