@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.26 2009/08/06 17:45:06 jrb Exp $
+# $Id: SConscript,v 1.27 2009/08/06 18:30:09 jrb Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-18-09
 import os
@@ -21,7 +21,7 @@ configfile.write('"\n')
 configfile.close()
 
 libEnv.Tool('facilitiesLib', depsOnly = 1)
-facilitiesLib = libEnv.SwigLibrary('facilities', listFiles(['src/*.cxx']))
+facilitiesLib = libEnv.SharedLibrary('facilities', listFiles(['src/*.cxx']))
 
 swigEnv.Tool('facilitiesLib')
 swigEnv.Tool('addLibrary', library=swigEnv['pythonLibs'])
