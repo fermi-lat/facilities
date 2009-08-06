@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  6 11:30:09 PDT 2009
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+Use SwigLibrary function
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug  6 10:45:07 PDT 2009
 GlastRelease-scons/facilities
 
