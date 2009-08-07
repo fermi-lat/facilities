@@ -2,6 +2,16 @@
 TAG
 Tag name: facilities-02-18-10, operation: add
 Package: facilities
+User: jrb  Fri Aug  7 11:14:56 2009
+Files:
+  facilities/cmt/.cvsignore  1.1
+  facilities/cmt/requirements  1.64
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-10, operation: add
+Package: facilities
 User: jrb  Fri Aug  7 11:14:50 2009
 Files:
   facilities/.cvsignore  1.10
