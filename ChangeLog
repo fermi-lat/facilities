@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-10, operation: add
+Package: facilities
+User: jrb  Fri Aug  7 11:14:50 2009
+Files:
+  facilities/.cvsignore  1.10
+  facilities/ChangeLog  1.492
+  facilities/facilitiesLib.py  1.3
+  facilities/SConscript  1.29
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Aug  7 11:14:44 PDT 2009
 GlastRelease-scons/facilities/doc
 
