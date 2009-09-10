@@ -2,6 +2,16 @@
 TAG
 Tag name: facilities-02-18-11, operation: add
 Package: facilities
+User: jrb  Thu Sep 10 16:47:19 2009
+Files:
+  facilities/doc/release.notes  1.51
+  facilities/doc/index.html  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-11, operation: add
+Package: facilities
 User: jrb  Thu Sep 10 16:47:13 2009
 Files:
   facilities/cmt/.cvsignore  1.1
