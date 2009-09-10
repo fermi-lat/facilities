@@ -2,6 +2,15 @@
 TAG
 Tag name: facilities-02-18-11, operation: add
 Package: facilities
+User: jrb  Thu Sep 10 16:47:30 2009
+Files:
+  facilities/python/facilities.py  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-11, operation: add
+Package: facilities
 User: jrb  Thu Sep 10 16:47:25 2009
 Files:
   facilities/facilities/binarystream.h  1.1.1.1
