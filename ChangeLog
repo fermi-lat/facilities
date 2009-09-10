@@ -2,6 +2,27 @@
 TAG
 Tag name: facilities-02-18-11, operation: add
 Package: facilities
+User: jrb  Thu Sep 10 16:47:36 2009
+Files:
+  facilities/src/XGetopt.cxx  1.3
+  facilities/src/ScheduledEvent.cxx  1.1.1.1
+  facilities/src/mainpage.h  1.2
+  facilities/src/Timestamp.cxx  1.7
+  facilities/src/commonUtilities.cxx  1.26
+  facilities/src/Util.cxx  1.33
+  facilities/src/Scheduler.cxx  1.1.1.1
+  facilities/src/Clock.cxx  1.1.1.1
+  facilities/src/py_facilities.in  1.1
+  facilities/src/py_facilities.i  1.1
+  facilities/src/test/test_time.cxx  1.7
+  facilities/src/test/testUtil.cxx  1.27
+  facilities/src/test/test_env.cxx  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-11, operation: add
+Package: facilities
 User: jrb  Thu Sep 10 16:47:30 2009
 Files:
   facilities/python/facilities.py  1.1
