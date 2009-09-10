@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Sep  9 18:24:08 PDT 2009
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	XGetopt.cxx 
+Log Message:
+Add newline at end of file to avoid compiler warning
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-15-01-02, operation: del
 Package: facilities
