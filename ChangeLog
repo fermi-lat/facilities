@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: jrb  Thu Dec  3 15:46:56 PST 2009
+ScienceTools-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Changes for SCons
+* fix getPfilesPath
+* allow for supersede directory when getting/setting package env. variables
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Dec  3 15:46:56 PST 2009
 ScienceTools-scons/facilities/facilities
 
 Modified Files:
