@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec  4 13:05:54 PST 2009
+ScienceTools-scons/facilities/facilities
+
+Modified Files:
+	commonUtilities.h 
+Log Message:
+Better solution to package env. variables with or without supersede directory
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-18-12, operation: add
 Package: facilities
