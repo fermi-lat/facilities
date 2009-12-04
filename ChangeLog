@@ -1,4 +1,54 @@
 ------------------------------------------------------------
+TAG
+Tag name: facilities-02-18-12, operation: add
+Package: facilities
+User: jrb  Thu Dec  3 18:37:02 2009
+Files:
+  facilities/.cvsignore  1.11
+  facilities/ChangeLog  1.520
+  facilities/facilitiesLib.py  1.3
+  facilities/SConscript  1.31
+  facilities/cmt/.cvsignore  1.1
+  facilities/cmt/requirements  1.66
+  facilities/doc/release.notes  1.52
+  facilities/doc/index.html  1.1
+  facilities/facilities/binarystream.h  1.1.1.1
+  facilities/facilities/SimpleEvent.h  1.1.1.1
+  facilities/facilities/Observer.h  1.2
+  facilities/facilities/Clock.h  1.3
+  facilities/facilities/Utility.h  1.1.1.1
+  facilities/facilities/filemap.h  1.1.1.1
+  facilities/facilities/error.h  1.1.1.1
+  facilities/facilities/commonUtilities.h  1.6
+  facilities/facilities/XGetopt.h  1.2
+  facilities/facilities/ScheduledEvent.h  1.3
+  facilities/facilities/Commissioner.h  1.1.1.1
+  facilities/facilities/Converter.h  1.1.1.1
+  facilities/facilities/environmentCallback.h  1.1
+  facilities/facilities/FIFO.h  1.1.1.1
+  facilities/facilities/Adapter.h  1.1.1.1
+  facilities/facilities/Util.h  1.23
+  facilities/facilities/bpkt_streams.h  1.1.1.1
+  facilities/facilities/Scheduler.h  1.3
+  facilities/facilities/Timestamp.h  1.10
+  facilities/facilities/bitmanip.h  1.2
+  facilities/python/facilities.py  1.1
+  facilities/src/XGetopt.cxx  1.3
+  facilities/src/ScheduledEvent.cxx  1.1.1.1
+  facilities/src/mainpage.h  1.2
+  facilities/src/Timestamp.cxx  1.7
+  facilities/src/commonUtilities.cxx  1.27
+  facilities/src/Util.cxx  1.33
+  facilities/src/Scheduler.cxx  1.1.1.1
+  facilities/src/Clock.cxx  1.1.1.1
+  facilities/src/py_facilities.in  1.1
+  facilities/src/py_facilities.i  1.1
+  facilities/src/test/test_time.cxx  1.7
+  facilities/src/test/testUtil.cxx  1.27
+  facilities/src/test/test_env.cxx  1.3
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Dec  3 18:36:51 PST 2009
 ScienceTools-scons/facilities/cmt
 
