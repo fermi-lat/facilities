@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: elwinter  Wed Dec 16 14:32:22 PST 2009
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Made code which sets the EXTFILESSYS environment variable
+conditional. That code is not compiled when HEADAS is defined, since
+that code needs the GLAST_EXT environment variable, which the FSSC
+does not use.
+
+    *
+------------------------------------------------------------
 User: elwinter  Wed Dec 16 14:19:45 PST 2009
 facilities/src
 
