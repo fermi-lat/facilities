@@ -1,11 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.32 2008/04/04 02:25:18 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Util.cxx,v 1.33 2009/01/26 17:21:48 vernaleo Exp $
 
 #include "facilities/Util.h"
 
+#include <cstdlib>
 #include <sstream>
 
 #include <iostream>
 #include <cstdio>
+#include <string.h>
 
 #ifdef WIN32
 // For Sleep( ).   Not happy about this, but can't find anything else 
