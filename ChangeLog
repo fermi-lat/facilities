@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 13 18:27:25 PST 2010
+ScienceTools-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Support for job options
+Change def of $CALDB to match convention in new tag of irfs/caldb
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 13 18:26:49 PST 2010
 ScienceTools-scons/facilities/facilities
 
