@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb 17 16:55:39 PST 2010
+ScienceTools-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+Fix library link
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-19-00, operation: add
 Package: facilities
