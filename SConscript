@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.34 2010/01/14 02:29:20 jrb Exp $
+# $Id: SConscript,v 1.35 2010/02/18 00:55:38 jrb Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-19-00
 import os
@@ -19,6 +19,9 @@ for package in packages:
     configfile.write(' ')
 configfile.write('"\n')
 configfile.close()
+
+if baseEnv['PLATFORM'] == "win32":
+    libEnv.Tool('facilitiesLib', depsOnly = 1)
 
 facilitiesLib = libEnv.SharedLibrary('facilities', listFiles(['src/*.cxx']))
 
