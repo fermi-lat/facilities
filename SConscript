@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.37 2010/02/22 20:48:35 jrb Exp $
+# $Id: SConscript,v 1.38 2010/02/24 20:03:46 jrb Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-19-02
 import os
@@ -20,9 +20,8 @@ for package in packages:
 configfile.write('"\n')
 configfile.close()
 
-if baseEnv['PLATFORM'] == "win32":
-    libEnv.Tool('facilitiesLib', depsOnly = 1)
-
+libEnv.Tool('addLinkDeps', package = 'facilities',
+            toBuild = 'shared')
 facilitiesLib = libEnv.SharedLibrary('facilities', listFiles(['src/*.cxx']))
 
 swigEnv.Tool('facilitiesLib')
@@ -33,13 +32,6 @@ progEnv.Tool('facilitiesLib')
 test_time = progEnv.Program('test_time', ['src/test/test_time.cxx'])
 test_env = progEnv.Program('test_env', ['src/test/test_env.cxx'])
 test_Util = progEnv.Program('test_Util',[ 'src/test/testUtil.cxx'])
-
-#progEnv.Tool('registerObjects', package = 'facilities',
-#             libraries = [facilitiesLib, lib_pyFacilities],
-#             testApps = [test_time, test_env, test_Util],
-#             includes = listFiles(['facilities/*.h']),
-#             python = ['python/facilities.py', 'src/py_facilities.py'])
-
 
 progEnv.Tool('registerTargets', package = 'facilities',
              libraryCxts = [[facilitiesLib, libEnv]],
