@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Sat Jun 12 15:35:45 PDT 2010
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+establish pkgJOBOPTIONSPATH env vars for CMT as well as SCons
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-19-04, operation: add
 Package: facilities
