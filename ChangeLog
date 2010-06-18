@@ -2,6 +2,14 @@
 TAG
 Tag name: ScienceTools-09-17-00, operation: add
 Package: facilities
+User: glastrm  Thu Jun 17 18:43:05 2010
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-17-00, operation: add
+Package: facilities
 User: glastrm  Mon Jun 14 21:44:00 2010
 Files:
   facilities/.cvsignore  1.11
