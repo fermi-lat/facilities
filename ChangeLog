@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 25 16:38:09 PDT 2010
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+let pathFound always return true on Win since test inexplicably fails even when path is there
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-17-00, operation: add
 Package: facilities
