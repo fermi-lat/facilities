@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jrb  Tue Sep 14 10:35:23 PDT 2010
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+set env variable for obf load path if value is available
+    *
+------------------------------------------------------------
+User: jrb  Tue Sep 14 10:35:23 PDT 2010
 facilities
 
 Modified Files:
