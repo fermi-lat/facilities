@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.43 2010/06/25 23:40:23 jrb Exp $
+# $Id: SConscript,v 1.44 2010/09/03 21:54:30 jrb Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-19-07
 import os
@@ -18,6 +18,14 @@ for package in packages:
     configfile.write(os.path.basename(package))
     configfile.write(' ')
 configfile.write('"\n')
+
+if 'obfLdPath' in libEnv:
+    configfile.write('#define REL_OBFLDPATH "')
+    rpathNode = Dir(str(libEnv['GLASTEXTvalue'])).rel_path(Dir(str(libEnv['obfLdPath'])))
+    configfile.write(str(rpathNode))
+    configfile.write('"\n')
+                 
+
 configfile.close()
 
 libEnv.Tool('addLinkDeps', package = 'facilities',
