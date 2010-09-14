@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Sep 14 14:22:12 PDT 2010
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Only attempt to set extFiles env. var. if extFiles external is being used
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-19-08, operation: add
 Package: facilities
