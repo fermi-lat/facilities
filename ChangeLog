@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Sep 14 10:35:23 PDT 2010
+facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+set env variable for obf load path if value is available
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-19-07, operation: add
 Package: facilities
