@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 11 12:33:55 PDT 2010
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Define TIMING_DIR for SCons builds of GR; reorganize setupEnvironment routine for readability
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-18-05, operation: add
 Package: facilities
