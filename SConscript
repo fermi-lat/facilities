@@ -2,46 +2,13 @@
 # $Id: SConscript,v 1.44 2010/09/03 21:54:30 jrb Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-19-07
-import os, sys, subprocess
+import os
 Import('baseEnv')
 Import('listFiles')
-##Import('ourSpawn')
-##Import('SetupSpawn')
 Import('packages')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 swigEnv = baseEnv.Clone()
-
-
-
-
-class ourSpawn:
-    def ourspawn(self, sh, escape, cmd, args, env):
-        newargs = ' '.join(args[1:])
-        cmdline = cmd + " " + newargs
-        startupinfo = subprocess.STARTUPINFO()
-        startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
-        proc = subprocess.Popen(cmdline, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE, startupinfo=startupinfo, shell = False, env = env)
-        data, err = proc.communicate()
-        rv = proc.wait()
-        if rv:
-            print "====="
-            print err
-            print "====="
-        return rv
-
-def SetupSpawn( env ):
-    if sys.platform == 'win32':
-        buf = ourSpawn()
-        buf.ourenv = env
-        env['SPAWN'] = buf.ourspawn
-        #for key in env: 
-        #    print env[key]
-        print "inside SetupSpawn; printing env"
-        print env
-
-##SetupSpawn(libEnv)
 
 # Write a config.h containing a list of all the packages in the current build
 configfile = open(os.path.join(str(Dir('.').srcnode()),'src','config.h'), 'w')
