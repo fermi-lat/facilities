@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 13 17:31:54 PST 2011
+GlastRelease-scons/facilities
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	SConscript 
+Log Message:
+undo accidental commit
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 13 13:21:47 PST 2011
 GlastRelease-scons/facilities
 
