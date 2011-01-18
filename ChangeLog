@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jan 18 07:44:42 PST 2011
+facilities/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+forcing new tag to test SCons Win builds
+    *
+------------------------------------------------------------
 User: heather  Tue Jan 18 07:44:41 PST 2011
 facilities/cmt
 
