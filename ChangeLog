@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jan 18 07:44:41 PST 2011
+facilities/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+forcing new tag to test SCons Win builds
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 13 17:31:54 PST 2011
 GlastRelease-scons/facilities
 
