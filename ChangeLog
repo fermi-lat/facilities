@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Apr 14 20:38:29 PDT 2011
+facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+first attempt to set new CATALOGPRODUCTSPATH and DIFFUSEMODELSPATH
+    *
+------------------------------------------------------------
+User: heather  Thu Apr 14 20:38:29 PDT 2011
 facilities/doc
 
 Modified Files:
