@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.53 2011/05/27 00:03:50 jrb Exp $
+# $Id: SConscript,v 1.54 2011/05/27 19:07:07 jrb Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-20-01
 import os
@@ -50,8 +50,7 @@ if 'makeStatic' in baseEnv:
                  staticLibraryCxts = [[facilitiesLib, libEnv]],
                  testAppCxts = [[test_time, progEnv], [test_env,progEnv],
                                 [test_Util,progEnv]],
-                 includes = listFiles(['facilities/*.h']),
-                 python = ['python/facilities.py', 'src/py_facilities.py'])
+                 includes = listFiles(['facilities/*.h']) )
 else:
     progEnv.Tool('registerTargets', package = 'facilities',
                  libraryCxts = [[facilitiesLib, libEnv]],
