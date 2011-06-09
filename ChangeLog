@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun  9 10:42:04 PDT 2011
+GRBAnalysis-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+do not build swig library in makeStatic case
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-20-01, operation: add
 Package: facilities
