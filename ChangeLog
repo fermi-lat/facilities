@@ -2,6 +2,16 @@
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: facilities
+User: heather  Wed Sep  7 13:56:36 2011
+Files:
+  facilities/doc/release.notes  1.71
+  facilities/doc/index.html  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: facilities
 User: heather  Wed Sep  7 13:56:25 2011
 Files:
   facilities/.cvsignore  1.11
