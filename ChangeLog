@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec  2 15:19:17 PST 2011
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+Fix typo preventing Windows compile
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr14, operation: add
 Package: facilities
