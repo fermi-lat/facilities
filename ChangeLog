@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Tue Feb  7 06:42:49 PST 2012
+ScienceTools-scons/facilities/src
+
+Modified Files:
+	py_facilities.i 
+Log Message:
+fix cstd import for swig
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr21, operation: add
 Package: facilities
