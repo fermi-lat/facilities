@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 13 15:49:51 PST 2012
+GlastRelease-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+on Windows change backslash to forward in obf ld path string
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-04-01-gr12, operation: add
 Package: facilities
