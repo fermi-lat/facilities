@@ -1,8 +1,8 @@
 # -*- python -*-
-# $Id: SConscript,v 1.58 2011/12/02 23:19:47 jrb Exp $
+# $Id: SConscript,v 1.59 2011/12/10 19:49:29 heather Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-20-05
-import os
+import os, os.path
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
@@ -22,7 +22,15 @@ configfile.write('"\n')
 if 'obfLdPath' in libEnv:
     configfile.write('#define REL_OBFLDPATH "')
     rpathNode = Dir(str(libEnv['GLASTEXTvalue'])).rel_path(Dir(str(libEnv['obfLdPath'])))
-    configfile.write(str(rpathNode))
+    rpathStr = str(rpathNode)
+    if baseEnv['PLATFORM'] == "win32":
+        # Change backslashes to forward so they don't get eaten
+        [head, tail] = os.path.split(rpathStr)
+        while head != '':
+            [head, newTail] = os.path.split(head)
+            tail = newTail + "/" + tail
+        rpathStr = tail
+    configfile.write(rpathStr)
     configfile.write('"\n')
                  
 
