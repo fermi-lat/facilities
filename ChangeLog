@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 28 15:19:09 PST 2012
+GlastRelease-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+On Windows install XGetopt.obj separately; does not go in dll
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr24, operation: add
 Package: facilities
