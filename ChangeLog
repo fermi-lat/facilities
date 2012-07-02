@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Mon Jul  2 13:55:46 PDT 2012
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	Util.cxx 
+Log Message:
+fix the empty delimiter case
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-29-00, operation: add
 Package: facilities
