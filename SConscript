@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.65 2012/07/09 19:35:13 jrb Exp $
+# $Id: SConscript,v 1.66 2012/07/09 19:35:44 jrb Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
 # Version: facilities-02-20-09
 import os, os.path, re
@@ -43,7 +43,7 @@ for s in srcFiles:
     if re.search('XGetopt', str(s)) != None: toRemove = s
 if toRemove != '' : srcFiles.remove(toRemove)
 
-makeWrapper = False
+makeWrapper = True
 if 'makeStatic' in baseEnv:
     libEnv.Tool('addLinkDeps', package = 'facilities', toBuild = 'static')
     facilitiesLib = libEnv.StaticLibrary('facilities', srcFiles)
@@ -52,8 +52,10 @@ else:
                 toBuild = 'shared')
     facilitiesLib = libEnv.SharedLibrary('facilities', srcFiles)
 
-    if baseEnv['CONTAINERNAME'] != 'GlastRelease':
-        makeWrapper = True
+    if 'CONTAINERNAME' in baseEnv:
+        if baseEnv['CONTAINERNAME'] == 'GlastRelease':
+            makeWrapper = False
+    if makeWrapper:
         swigEnv.Tool('facilitiesLib') 
         swigEnv.Tool('addLibrary', library=swigEnv['pythonLibs'])
         lib_pyFacilities = swigEnv.SwigLibrary('_py_facilities', 
