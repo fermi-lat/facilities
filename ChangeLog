@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul  9 12:35:14 PDT 2012
+GlastRelease-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+no swig wrapper lib for GlastRelease
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-00, operation: add
 Package: facilities
