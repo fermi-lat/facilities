@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul  9 14:10:48 PDT 2012
+GlastRelease-scons/facilities
+
+Modified Files:
+	SConscript 
+Log Message:
+omit wrapper lib from GR without breaking everything else!
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-20-09, operation: add
 Package: facilities
