@@ -1,7 +1,10 @@
-#$Id: facilitiesLib.py,v 1.2 2008/02/22 01:30:26 golpa Exp $
-def generate(env, **kw):
-	if not kw.get('depsOnly',0):
-		env.Tool('addLibrary', library = ['facilities'])
+#$Id: facilitiesLib.py,v 1.3 2008/02/26 03:15:14 glastrm Exp $
 
+def generate(env, **kw):
+    if not kw.get('depsOnly',0):
+	env.Tool('addLibrary', library = ['facilities'])
+	if env['PLATFORM'] == 'win32' and env.get('CONTAINERNAME','')=='GlastRelease':
+
+	    env.Tool('findPkgPath', package = 'facilities') 
 def exists(env):
-	return 1;
+    return 1;
