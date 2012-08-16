@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug 16 16:49:59 PDT 2012
+GlastRelease-scons/facilities
+
+Modified Files:
+	facilitiesLib.py 
+Log Message:
+for Windows no-installed-headers
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-01, operation: add
 Package: facilities
