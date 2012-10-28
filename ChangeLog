@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Sat Oct 27 19:40:21 PDT 2012
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+new strategy for setting package env variables
+    *
+------------------------------------------------------------
 User: jrb  Sat Oct 27 19:40:20 PDT 2012
 GlastRelease-scons/facilities/facilities
 
