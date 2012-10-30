@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Oct 30 14:16:09 PDT 2012
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+patch for rhel6 compiler
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-22-00, operation: add
 Package: facilities
