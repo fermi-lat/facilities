@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: tstephen  Wed May 15 10:00:38 PDT 2013
+ScienceTools-scons/facilities/facilities
+
+Modified Files:
+	AssertDialogOverride.h 
+Log Message:
+Added usage documentation into the header file.
+
+    *
+------------------------------------------------------------
 User: tstephen  Wed May 15 09:53:29 PDT 2013
 ScienceTools-scons/facilities/facilities
 
