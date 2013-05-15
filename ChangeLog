@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: tstephen  Wed May 15 09:53:29 PDT 2013
+ScienceTools-scons/facilities/facilities
+
+Added Files:
+	AssertDialogOverride.h 
+Log Message:
+Added in a small helper function that can be used in unit tests on Windows to override the default behavior of displaying a dialog when an assertion fails and instead write it out the the stdandard output stream.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-lp43, operation: add
 Package: facilities
