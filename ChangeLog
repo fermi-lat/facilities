@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: tstephen  Thu May 16 08:51:46 PDT 2013
+ScienceTools-scons/facilities/facilities
+
+Modified Files:
+	AssertDialogOverride.h 
+Log Message:
+Corrected line feed endings that somehow got mangled.  This was causing a compile failure on windows.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: facilities-02-22-02, operation: add
 Package: facilities
