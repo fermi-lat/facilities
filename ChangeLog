@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: tstephen  Fri May 17 11:59:17 PDT 2013
+ScienceTools-scons/facilities/facilities
+
+Modified Files:
+	AssertDialogOverride.h 
+Log Message:
+Modified the function catching the assertion errors to exit the program instead of allowing it to continue.  Continuing was just raising additional errors.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-13, operation: add
 Package: facilities
