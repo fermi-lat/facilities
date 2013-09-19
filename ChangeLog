@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 19 15:26:36 PDT 2013
+GlastRelease-scons/facilities/src
+
+Modified Files:
+	commonUtilities.cxx 
+Log Message:
+call setupEnvironment( ) automatically when possible (and useful)
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-lp54, operation: add
 Package: facilities
