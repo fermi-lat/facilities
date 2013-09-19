@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jrb  Thu Sep 19 15:26:36 PDT 2013
+GlastRelease-scons/facilities/src/test
+
+Modified Files:
+	test_env.cxx 
+Log Message:
+call setupEnvironment( ) automatically when possible (and useful)
+    *
+------------------------------------------------------------
+User: jrb  Thu Sep 19 15:26:36 PDT 2013
 GlastRelease-scons/facilities/src
 
 Modified Files:
