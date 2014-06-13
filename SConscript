@@ -1,6 +1,6 @@
 # -*- python -*-
-# $Id: SConscript,v 1.77 2014/04/08 21:30:07 glastrm Exp $
-# Authors: T.Burnett <tburnett@u.washington.edu>, Navid Golpayegani <golpa@slac.stanford.edu>
+# $Id: SConscript,v 1.78 2014/04/28 18:40:00 heather Exp $
+# Authors: J. Bogart <jrb@slac.stanford.edu>, T.Burnett <tburnett@u.washington.edu>
 # Version: facilities-02-23-00
 import os, os.path, re
 Import('baseEnv')
