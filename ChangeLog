@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Jul 24 13:31:11 PDT 2015
+facilities/facilities
+
+Modified Files:
+	Timestamp.h 
+Log Message:
+add option to get Timestamp string representation taking account of leap seconds
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-10-03, operation: add
 Package: facilities
