@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Timestamp.cxx,v 1.7 2005/04/05 06:01:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/src/Timestamp.cxx,v 1.8 2015/07/24 20:31:12 jrb Exp $
 
 #include <ctime>
 #include <cstdlib>
@@ -233,6 +233,7 @@ namespace facilities {
   /* Returns number of leap seconds since MET till our value */
   int Timestamp::getAdjustment() const {
     int adjust = 0;
+    if (*this > Timestamp("2006-01-01", 0)) adjust++;
     if (*this > Timestamp("2009-01-01", 0)) adjust++;
     if (*this > Timestamp("2012-07-01", 0)) adjust++;
     if (*this > Timestamp("2015-07-01", 0)) adjust++;
