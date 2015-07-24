@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.9 2005/04/05 06:01:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/facilities/facilities/Timestamp.h,v 1.10 2005/07/31 21:40:13 jrb Exp $
 #ifndef FACILITIES_TIMESTAMP_H
 #define FACILITIES_TIMESTAMP_H
 
@@ -84,7 +84,8 @@ namespace facilities {
               int second = 0, int nano = 0);
 
     /// Return string representation of time, not including nanoseconds;
-    std::string getString() const;
+    /// If requested, attempt to account for leapseconds 
+    std::string getString(bool withLeap=false) const;
 
     /// Return julian date
     double      getJulian() const;
@@ -152,6 +153,8 @@ namespace facilities {
 
     /// Assemble string rep. from count of seconds
     static void toString(time_t bin, std::string& strTime);
+
+    int getAdjustment() const;
 
   protected:
     /// internal binary rep of time; count seconds from Jan 1, 1970
