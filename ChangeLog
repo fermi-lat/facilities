@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Jul 24 13:31:12 PDT 2015
+facilities/src
+
+Modified Files:
+	Timestamp.cxx 
+Log Message:
+add option to get Timestamp string representation taking account of leap seconds
+    *
+------------------------------------------------------------
 User: jrb  Fri Jul 24 13:31:11 PDT 2015
 facilities/facilities
 
