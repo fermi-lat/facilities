@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Jul 24 15:03:46 PDT 2015
+facilities/src
+
+Modified Files:
+	Timestamp.cxx 
+Log Message:
+Count timestamps from MET correctly
+    *
+------------------------------------------------------------
 User: jrb  Fri Jul 24 13:31:12 PDT 2015
 facilities/src/test
 
