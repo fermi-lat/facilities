@@ -1,5 +1,56 @@
 ------------------------------------------------------------
 TAG
+Tag name: ScienceTools-11-01-00, operation: add
+Package: facilities
+User: jchiang  Sat Apr 30 12:14:14 2016
+Files:
+  facilities/.cvsignore  1.11
+  facilities/ChangeLog  1.994
+  facilities/facilitiesLib.py  1.4
+  facilities/SConscript  1.82
+  facilities/cmt/.cvsignore  1.1
+  facilities/cmt/requirements  1.105
+  facilities/doc/release.notes  1.90
+  facilities/doc/index.html  1.1
+  facilities/facilities/binarystream.h  1.1.1.1
+  facilities/facilities/SimpleEvent.h  1.1.1.1
+  facilities/facilities/Observer.h  1.2
+  facilities/facilities/Clock.h  1.3
+  facilities/facilities/Utility.h  1.1.1.1
+  facilities/facilities/filemap.h  1.1.1.1
+  facilities/facilities/error.h  1.1.1.1
+  facilities/facilities/commonUtilities.h  1.9
+  facilities/facilities/XGetopt.h  1.2
+  facilities/facilities/ScheduledEvent.h  1.3
+  facilities/facilities/Commissioner.h  1.1.1.1
+  facilities/facilities/Converter.h  1.1.1.1
+  facilities/facilities/environmentCallback.h  1.1
+  facilities/facilities/FIFO.h  1.1.1.1
+  facilities/facilities/Adapter.h  1.1.1.1
+  facilities/facilities/Util.h  1.23
+  facilities/facilities/bpkt_streams.h  1.1.1.1
+  facilities/facilities/AssertDialogOverride.h  1.4
+  facilities/facilities/Scheduler.h  1.3
+  facilities/facilities/Timestamp.h  1.11
+  facilities/facilities/bitmanip.h  1.2
+  facilities/python/facilities.py  1.1
+  facilities/src/XGetopt.cxx  1.3
+  facilities/src/ScheduledEvent.cxx  1.1.1.1
+  facilities/src/mainpage.h  1.3
+  facilities/src/Timestamp.cxx  1.9
+  facilities/src/commonUtilities.cxx  1.45
+  facilities/src/Util.cxx  1.35
+  facilities/src/Scheduler.cxx  1.1.1.1
+  facilities/src/Clock.cxx  1.1.1.1
+  facilities/src/py_facilities.in  1.1
+  facilities/src/py_facilities.i  1.2
+  facilities/src/test/test_time.cxx  1.9
+  facilities/src/test/testUtil.cxx  1.27
+  facilities/src/test/test_env.cxx  1.4
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-20-11-00, operation: add
 Package: facilities
 User: heather  Thu Mar 31 20:51:17 2016
