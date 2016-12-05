@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-20-10-04-br02, operation: add
 Package: facilities
+User: heather  Mon Dec  5 11:25:32 2016
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-20-10-04-br02, operation: add
+Package: facilities
 User: heather  Mon Dec  5 11:22:50 2016
 Files:
   facilities/.cvsignore  1.11
