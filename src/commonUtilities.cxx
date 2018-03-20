@@ -230,6 +230,11 @@ namespace facilities {
     if(env != NULL)
       packageRoot = env;
 #else
+    const char *env = getenv("CONDA_PREFIX");
+    if (env != NULL)
+      packageRoot = env;
+      return packageRoot;
+    else
     std::string upperCase=package;
     transform(upperCase.begin(),upperCase.end(),upperCase.begin(),(int(*)(int)) toupper);
     upperCase=upperCase+"ROOT";
