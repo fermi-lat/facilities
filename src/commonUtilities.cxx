@@ -121,10 +121,10 @@ namespace facilities {
       commonUtilities::myInternal->getSconsPackageRoot(package);
     std::string dataPath;
     if (getenv("CONDA_PREFIX") != NULL) {
-      dataPath = joinPath(joinPath(packageRoot, "share"), package);
+      dataPath = joinPath(packageRoot, "share");
       dataPath = joinPath(dataPath, "fermitools");
       dataPath = joinPath(dataPath, "refdata");
-      dataPath = joinPath(dataPath, "fermi");
+      dataPath = joinPath(joinPath(dataPath, "fermi"), package);
     } else {
       dataPath = joinPath(joinPath(packageRoot, "data"), package);
     }
@@ -172,9 +172,9 @@ namespace facilities {
       commonUtilities::myInternal->getSconsPackageRoot(package);
     std::string xmlPath;
     if (getenv("CONDA_PREFIX") != NULL) {
-      xmlPath = joinPath(joinPath(packageRoot, "share"), package);
+      xmlPath = joinPath(packageRoot, "share");
       xmlPath = joinPath(xmlPath, "fermitools");
-      xmlPath = joinPath(xmlPath, "xml");
+      xmlPath = joinPath(joinPath(xmlPath, "xml"), package);
     } else {
       xmlPath = joinPath(joinPath(packageRoot, "xml"), package);
     }
