@@ -57,6 +57,11 @@ namespace facilities {
     m_superSet.clear();
     m_instDir = commonUtilities::getEnvironment("INST_DIR");
     m_baseDir = commonUtilities::getEnvironment("BASE_DIR");
+    const char *env = getenv("CONDA_PREFIX");
+    if (env != NULL) {
+      m_instDir = env;
+      m_baseDir = env;
+    }
     m_hasSupersede =  (m_instDir != m_baseDir);
     if (!m_hasSupersede) return;
 
@@ -230,6 +235,11 @@ namespace facilities {
     if(env != NULL)
       packageRoot = env;
 #else
+    const char *env = getenv("CONDA_PREFIX");
+    if (env != NULL)
+      packageRoot = env;
+      return packageRoot;
+    else
     std::string upperCase=package;
     transform(upperCase.begin(),upperCase.end(),upperCase.begin(),(int(*)(int)) toupper);
     upperCase=upperCase+"ROOT";
