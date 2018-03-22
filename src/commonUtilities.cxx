@@ -233,6 +233,7 @@ namespace facilities {
     const char *env = getenv("CONDA_PREFIX");
     if (env != NULL)
       packageRoot = env;
+      std::cout << "env is: " << env << std::endl;
       return packageRoot;
     else
     std::string upperCase=package;
