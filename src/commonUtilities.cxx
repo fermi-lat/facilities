@@ -119,8 +119,14 @@ namespace facilities {
     }
     std::string packageRoot = 
       commonUtilities::myInternal->getSconsPackageRoot(package);
-    std::string dataPath = joinPath(joinPath(packageRoot, "data"), package);
-
+    if (getenv("CONDA_PREFIX") != NULL) {
+      std::string dataPath = joinPath(joinPath(packageRoot, "share"), package);
+      dataPath = joinPath(dataPath, "fermitools");
+      dataPath = joinPath(dataPath, "refdata");
+      dataPath = joinPath(dataPath, "fermi");
+    } else {
+      std::string dataPath = joinPath(joinPath(packageRoot, "data"), package);
+    }
     return  dataPath;
 #else
 #ifdef HEADAS
@@ -161,11 +167,15 @@ namespace facilities {
     if (commonUtilities::myInternal == 0) {
       commonUtilities::setupEnvironment();
     }
-
     std::string packageRoot = 
       commonUtilities::myInternal->getSconsPackageRoot(package);
-    std::string xmlPath = joinPath(joinPath(packageRoot, "xml"), package);
-
+    if (getenv("CONDA_PREFIX") != NULL) {
+      std::string dataPath = joinPath(joinPath(packageRoot, "share"), package);
+      dataPath = joinPath(dataPath, "fermitools");
+      dataPath = joinPath(dataPath, "xml");
+    } else {
+      std::string xmlPath = joinPath(joinPath(packageRoot, "xml"), package);
+    }
     return xmlPath;
 #else
 #ifdef HEADAS
@@ -187,10 +197,15 @@ namespace facilities {
     if (commonUtilities::myInternal == 0) {
       commonUtilities::setupEnvironment();
     }
-
     std::string packageRoot = 
       commonUtilities::myInternal->getSconsPackageRoot(package);
-    std::string pfilesLocation = joinPath(packageRoot, "syspfiles");
+    if (getenv("CONDA_PREFIX") != NULL) {
+      std::string dataPath = joinPath(joinPath(packageRoot, "share"), package);
+      dataPath = joinPath(dataPath, "fermitools");
+      dataPath = joinPath(dataPath, "syspfiles");
+    } else {
+      std::string pfilesLocation = joinPath(packageRoot, "syspfiles");
+    }
     return pfilesLocation;
 #else
 #ifdef HEADAS
