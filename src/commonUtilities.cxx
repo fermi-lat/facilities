@@ -203,7 +203,7 @@ namespace facilities {
       commonUtilities::myInternal->getSconsPackageRoot(package);
     std::string pfilesLocation;
     if (getenv("CONDA_PREFIX") != NULL) {
-      pfilesLocation = joinPath(joinPath(packageRoot, "share");
+      pfilesLocation = joinPath(packageRoot, "share");
       pfilesLocation = joinPath(pfilesLocation, "fermitools");
       pfilesLocation = joinPath(pfilesLocation, "syspfiles");
     } else {
