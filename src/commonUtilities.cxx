@@ -123,8 +123,7 @@ namespace facilities {
     if (getenv("CONDA_PREFIX") != NULL) {
       dataPath = joinPath(packageRoot, "share");
       dataPath = joinPath(dataPath, "fermitools");
-      dataPath = joinPath(dataPath, "refdata");
-      dataPath = joinPath(joinPath(dataPath, "fermi"), package);
+      dataPath = joinPath(joinPath(dataPath, "data"), package);
     } else {
       dataPath = joinPath(joinPath(packageRoot, "data"), package);
     }
