@@ -119,13 +119,14 @@ namespace facilities {
     }
     std::string packageRoot = 
       commonUtilities::myInternal->getSconsPackageRoot(package);
+    std::string dataPath;
     if (getenv("CONDA_PREFIX") != NULL) {
-      std::string dataPath = joinPath(joinPath(packageRoot, "share"), package);
+      dataPath = joinPath(joinPath(packageRoot, "share"), package);
       dataPath = joinPath(dataPath, "fermitools");
       dataPath = joinPath(dataPath, "refdata");
       dataPath = joinPath(dataPath, "fermi");
     } else {
-      std::string dataPath = joinPath(joinPath(packageRoot, "data"), package);
+      dataPath = joinPath(joinPath(packageRoot, "data"), package);
     }
     return  dataPath;
 #else
@@ -169,12 +170,13 @@ namespace facilities {
     }
     std::string packageRoot = 
       commonUtilities::myInternal->getSconsPackageRoot(package);
+    std::string xmlPath;
     if (getenv("CONDA_PREFIX") != NULL) {
-      std::string dataPath = joinPath(joinPath(packageRoot, "share"), package);
-      dataPath = joinPath(dataPath, "fermitools");
-      dataPath = joinPath(dataPath, "xml");
+      xmlPath = joinPath(joinPath(packageRoot, "share"), package);
+      xmlPath = joinPath(xmlPath, "fermitools");
+      xmlPath = joinPath(xmlPath, "xml");
     } else {
-      std::string xmlPath = joinPath(joinPath(packageRoot, "xml"), package);
+      xmlPath = joinPath(joinPath(packageRoot, "xml"), package);
     }
     return xmlPath;
 #else
@@ -199,12 +201,13 @@ namespace facilities {
     }
     std::string packageRoot = 
       commonUtilities::myInternal->getSconsPackageRoot(package);
+    std::string pfilesLocation;
     if (getenv("CONDA_PREFIX") != NULL) {
-      std::string dataPath = joinPath(joinPath(packageRoot, "share"), package);
-      dataPath = joinPath(dataPath, "fermitools");
-      dataPath = joinPath(dataPath, "syspfiles");
+      pfilesLocation = joinPath(joinPath(packageRoot, "share");
+      pfilesLocation = joinPath(pfilesLocation, "fermitools");
+      pfilesLocation = joinPath(pfilesLocation, "syspfiles");
     } else {
-      std::string pfilesLocation = joinPath(packageRoot, "syspfiles");
+      pfilesLocation = joinPath(packageRoot, "syspfiles");
     }
     return pfilesLocation;
 #else
