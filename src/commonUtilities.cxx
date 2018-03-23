@@ -58,7 +58,7 @@ namespace facilities {
     m_instDir = commonUtilities::getEnvironment("INST_DIR");
     m_baseDir = commonUtilities::getEnvironment("BASE_DIR");
     std::string condaEnv = commonUtilities::getEnvironment("CONDA_PREFIX");
-    if (env != "") {
+    if (condaEnv != "") {
       m_instDir = condaEnv;
       m_baseDir = condaEnv;
     }
