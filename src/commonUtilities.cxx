@@ -57,10 +57,10 @@ namespace facilities {
     m_superSet.clear();
     m_instDir = commonUtilities::getEnvironment("INST_DIR");
     m_baseDir = commonUtilities::getEnvironment("BASE_DIR");
-    const char *env = getenv("CONDA_PREFIX");
-    if (env != NULL) {
-      m_instDir = env;
-      m_baseDir = env;
+    std::string condaEnv = commonUtilities::getEnvironment("CONDA_PREFIX");
+    if (env != "") {
+      m_instDir = condaEnv;
+      m_baseDir = condaEnv;
     }
     m_hasSupersede =  (m_instDir != m_baseDir);
     if (!m_hasSupersede) return;
