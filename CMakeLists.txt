@@ -41,3 +41,19 @@ target_include_directories(py_facilities PUBLIC
                            $<INSTALL_INTERFACE:>)
 
 target_link_libraries(py_facilities PUBLIC facilities Python3::Python)
+
+###############################################################
+# Installation
+###############################################################
+install(DIRECTORY facilities DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+# install(DIRECTORY python DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+
+install(
+  TARGETS facilities py_facilities
+  # EXPORT fermiTargets
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
+
