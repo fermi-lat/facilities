@@ -53,10 +53,10 @@ target_link_libraries(py_facilities PUBLIC facilities Python3::Python)
 # Installation
 ###############################################################
 install(DIRECTORY facilities DESTINATION ${FERMI_INSTALL_INCLUDEDIR})
-install(DIRECTORY python/ DESTINATION ${PYTHON_SITE_PKGDIR})
+install(DIRECTORY python/ DESTINATION ${FERMI_INSTALL_PYTHON})
 
 install(
-  TARGETS facilities py_facilities
+  TARGETS facilities
   EXPORT fermiTargets
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
   LIBRARY DESTINATION lib
@@ -65,6 +65,15 @@ install(
 )
 
 install(
+  TARGETS py_facilities
+  EXPORT fermiTargets
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+  LIBRARY DESTINATION ${FERMI_INSTALL_PYTHON}
+  ARCHIVE DESTINATION lib
+  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
+
+install(
   FILES ${CMAKE_CURRENT_BINARY_DIR}/py_facilities.py
-  DESTINATION ${PYTHON_SITE_PKGDIR}
+  DESTINATION ${FERMI_INSTALL_PYTHON}
 )
