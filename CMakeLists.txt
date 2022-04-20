@@ -65,6 +65,6 @@ install(
 )
 
 install(
-  TARGETS py_facilities
-  LIBRARY DESTINATION ${PYTHON_SITE_PKGDIR}
+  FILES ${CMAKE_CURRENT_BINARY_DIR}/py_facilities.py
+  DESTINATION ${PYTHON_SITE_PKGDIR}
 )
