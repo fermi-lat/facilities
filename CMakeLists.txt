@@ -33,21 +33,18 @@ target_link_libraries(test_Util PRIVATE facilities)
 include(UseSWIG)
 
 set_property(SOURCE src/py_facilities.i PROPERTY CPLUSPLUS ON)
-
-swig_add_library(
-  py_facilities
-  TYPE SHARED
-  LANGUAGE python
-  SOURCES src/py_facilities.i
-)
-
+swig_add_library(py_facilities LANGUAGE python SOURCES src/py_facilities.i)
 target_include_directories(
   py_facilities PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<INSTALL_INTERFACE:>
 )
 
-target_link_libraries(py_facilities PUBLIC facilities Python3::Python)
+target_link_libraries(py_facilities PRIVATE facilities Python3::Python)
+
+if(APPLE)
+  target_link_options(py_facilities PRIVATE -bundle -flat_namespace)
+endif()
 
 ###############################################################
 # Installation
@@ -56,19 +53,10 @@ install(DIRECTORY facilities DESTINATION ${FERMI_INSTALL_INCLUDEDIR})
 install(DIRECTORY python/ DESTINATION ${FERMI_INSTALL_PYTHON})
 
 install(
-  TARGETS facilities
+  TARGETS facilities py_facilities test_env test_time test_Util
   EXPORT fermiTargets
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
   LIBRARY DESTINATION lib
-  ARCHIVE DESTINATION lib
-  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-)
-
-install(
-  TARGETS py_facilities
-  EXPORT fermiTargets
-  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-  LIBRARY DESTINATION ${FERMI_INSTALL_PYTHON}
   ARCHIVE DESTINATION lib
   INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
