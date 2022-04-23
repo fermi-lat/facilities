@@ -14,10 +14,14 @@ add_library(
 )
 
 target_include_directories(
-  facilities PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<INSTALL_INTERFACE:>
+  facilities
+  PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}> $<INSTALL_INTERFACE:>
+  PRIVATE ${CMAKE_BINARY_DIR}
 )
+target_compile_definitions(facilities PRIVATE HEADAS ScienceTools)
+if(APPLE)
+  target_compile_definitions(facilities PRIVATE __APPLE__)
+endif()
 
 ###### Tests ######
 add_executable(test_env src/test/test_env.cxx)
@@ -35,9 +39,8 @@ include(UseSWIG)
 set_property(SOURCE src/py_facilities.i PROPERTY CPLUSPLUS ON)
 swig_add_library(py_facilities LANGUAGE python SOURCES src/py_facilities.i)
 target_include_directories(
-  py_facilities PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<INSTALL_INTERFACE:>
+  py_facilities
+  PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}> $<INSTALL_INTERFACE:>
 )
 
 target_link_libraries(py_facilities PRIVATE facilities Python3::Python)
