@@ -3,7 +3,7 @@
 ####################################
 
 add_library(
-  facilities SHARED
+  facilities 
   src/Clock.cxx
   src/commonUtilities.cxx
   src/ScheduledEvent.cxx
