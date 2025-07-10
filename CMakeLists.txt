@@ -24,6 +24,8 @@ if(APPLE)
 endif()
 
 ###### Tests ######
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 add_executable(test_env src/test/test_env.cxx)
 add_executable(test_time src/test/test_time.cxx)
 add_executable(test_Util src/test/testUtil.cxx)
