@@ -3,7 +3,7 @@
 using namespace std;
 using namespace facilities;
 
-int main(){
+auto main() -> int{
   int errors = 0;
   string dataPath = commonUtilities::getDataPath("facilities");
   if(dataPath == ""){

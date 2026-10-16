@@ -6,7 +6,7 @@
  *  Caller should have an environment variable SRC with some
  *  sensible definition.
  */
-int main(int, char**) {
+auto main(int, char**) -> int {
   std::string name = std::string("${GLAST_EXT}/xerces");
   std::string nameAgain = std::string("${GLAST_EXT}/xerces");
   std::string oDelim = std::string ("${");

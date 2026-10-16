@@ -89,7 +89,7 @@ namespace facilities {
     m_time = mktime(&fields) - Timestamp::s_tz.m_tzseconds;
   }
 
-  std::string Timestamp::getString(bool withLeap) const {
+  auto Timestamp::getString(bool withLeap) const -> std::string {
     std::string str;
 
     toString(m_time, str);
@@ -106,14 +106,14 @@ namespace facilities {
     return str;
   }
 
-  double  Timestamp::getJulian() const {
+  auto  Timestamp::getJulian() const -> double {
     double julian = (m_time +  m_nano/inverseNano)/secPerDay;
     julian += julian1970;
     return julian;
   }
 
 
-  time_t Timestamp::toBinary(const std::string& strTime) {
+  auto Timestamp::toBinary(const std::string& strTime) -> time_t {
     // Break out fields
     struct tm fields;
 
@@ -231,7 +231,7 @@ namespace facilities {
   }
 
   /* Returns number of leap seconds since MET till our value */
-  int Timestamp::getAdjustment() const {
+  auto Timestamp::getAdjustment() const -> int {
     int adjust = 0;
     if (*this > Timestamp("2006-01-01", 0)) adjust++;
     if (*this > Timestamp("2009-01-01", 0)) adjust++;

@@ -10,7 +10,7 @@ void ScheduledEvent::schedule(double t, ScheduledEvent* next)
     Scheduler::instance()->schedule(t, next);
 }
 
-std::string ScheduledEvent::name()const
+auto ScheduledEvent::name()const -> std::string
 {
     const std::type_info& t = typeid(*this);
     return t.name();

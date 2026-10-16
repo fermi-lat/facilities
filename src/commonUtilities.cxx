@@ -28,7 +28,7 @@ extern char **environ;
 
 struct ltstr
 {
-  bool operator()(const char* s1, const char* s2) const
+  auto operator()(const char* s1, const char* s2) const -> bool
   {
     return std::strcmp(s1, s2) < 0;
   }
@@ -94,7 +94,7 @@ namespace facilities {
     return rt;
   }
 #endif
-  std::string commonUtilities::getPackagePath(const std::string &package){
+  auto commonUtilities::getPackagePath(const std::string &package) -> std::string{
 #ifdef SCons
     return joinPath(commonUtilities::getPackageRoot(package), package);
 #else
@@ -106,7 +106,7 @@ namespace facilities {
 #endif
   }
 
-  std::string commonUtilities::getDataPath(const std::string &package){
+  auto commonUtilities::getDataPath(const std::string &package) -> std::string{
 
 #ifdef SCons
     if (commonUtilities::myInternal == 0) {
@@ -132,7 +132,7 @@ namespace facilities {
 #endif
   }
 
-  std::string commonUtilities::getJobOptionsPath(const std::string &package) {
+  auto commonUtilities::getJobOptionsPath(const std::string &package) -> std::string {
 #ifdef SCons
     if (commonUtilities::myInternal == 0) {
       commonUtilities::setupEnvironment();
@@ -151,7 +151,7 @@ namespace facilities {
 #endif
   }
 
-  std::string commonUtilities::getXmlPath(const std::string &package){
+  auto commonUtilities::getXmlPath(const std::string &package) -> std::string{
 #ifdef SCons
     if (commonUtilities::myInternal == 0) {
       commonUtilities::setupEnvironment();
@@ -177,7 +177,7 @@ namespace facilities {
 #endif
   }
 
-  std::string commonUtilities::getPfilesPath(const std::string &package){
+  auto commonUtilities::getPfilesPath(const std::string &package) -> std::string{
 #ifdef SCons
     if (commonUtilities::myInternal == 0) {
       commonUtilities::setupEnvironment();
@@ -211,7 +211,7 @@ namespace facilities {
     }
   }
 
-  std::string commonUtilities::getEnvironment(const std::string &name){
+  auto commonUtilities::getEnvironment(const std::string &name) -> std::string{
     const char *env = getenv(name.c_str());
     std::string toReturn;
     if(env!=NULL)
@@ -219,7 +219,7 @@ namespace facilities {
     return toReturn;
   }
 
-  std::string commonUtilities::getPackageRoot(const std::string &package){
+  auto commonUtilities::getPackageRoot(const std::string &package) -> std::string{
     std::string packageRoot;
 #ifdef SCons
     return commonUtilities::myInternal->getSconsPackageRoot(package);
@@ -241,7 +241,7 @@ namespace facilities {
     return packageRoot;
   }
 
-  std::string commonUtilities::joinPath(const std::string &first, const std::string &second){
+  auto commonUtilities::joinPath(const std::string &first, const std::string &second) -> std::string{
 #ifdef WIN32
     return first+"\\"+second;
 #else

@@ -6,7 +6,7 @@
 #include <cassert>
 
 Scheduler* Scheduler::s_instance = 0;
-Scheduler* Scheduler::instance(){return (s_instance) ? s_instance : new Scheduler();}
+auto Scheduler::instance() -> Scheduler*{return (s_instance) ? s_instance : new Scheduler();}
 
 Scheduler::Scheduler()
 : m_time(GPStime(0))

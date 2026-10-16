@@ -8,7 +8,7 @@
 #include "facilities/Timestamp.h"
 
 
-int main(int, char**) {
+auto main(int, char**) -> int {
   using facilities::Timestamp;
   using facilities::BadTimeInput;
 

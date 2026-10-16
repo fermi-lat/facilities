@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <cstdio>
-#include <string.h>
+#include <cstring>
 
 #ifdef WIN32
 // For Sleep( ).   Not happy about this, but can't find anything else 
@@ -25,9 +25,9 @@
 
 namespace facilities {
     
-  int Util::expandEnvVar(std::string* toExpand, 
+  auto Util::expandEnvVar(std::string* toExpand, 
                          const std::string& openDel,
-                         const std::string& closeDel) {
+                         const std::string& closeDel) -> int {
     unsigned opLen = openDel.size();
     unsigned clLen = closeDel.size();
     int nSuccess = 0;
@@ -57,7 +57,7 @@ namespace facilities {
     return nSuccess;
   }
     
-  int Util::expandEnvVarOS(std::string* toExpand) {
+  auto Util::expandEnvVarOS(std::string* toExpand) -> int {
 #ifdef WIN32 
     return expandEnvVar(toExpand, "%", "%");
 #else
@@ -65,9 +65,9 @@ namespace facilities {
 #endif
   }
 
-  int Util::expandEnvVarList(std::vector<std::string> toExpand,
+  auto Util::expandEnvVarList(std::vector<std::string> toExpand,
                              std::vector<std::string> &result,
-                             const std::string &delimiters) {
+                             const std::string &delimiters) -> int {
    int num=0;
    try {
        std::vector<std::string>::const_iterator listIt, listIt2;
@@ -90,7 +90,7 @@ namespace facilities {
    return num;
    }
 
-  const char* Util::itoa(int val, std::string &outStr) {
+  auto Util::itoa(int val, std::string &outStr) -> const char* {
     // Purpose and Method:  Provide a standard routine to convert integers
     //    into std::string.  The method used depends upon the availability of
     //    the stringstream classes.  The stringstream classes are the
@@ -110,7 +110,7 @@ namespace facilities {
     return outCharPtr;
   }
 
-  const char* Util::utoa(unsigned int val, std::string &outStr, int base) {
+  auto Util::utoa(unsigned int val, std::string &outStr, int base) -> const char* {
     static char outCharPtr[20];
 
     std::ostringstream locStream;
@@ -128,7 +128,7 @@ namespace facilities {
     return outCharPtr;
   }
     
-  int Util::atoi(const std::string& inStr) {
+  auto Util::atoi(const std::string& inStr) -> int {
     // Purpose and Method:  Provide a standard routine to convert std::strings
     //    into integers.  The method used depends upon the availability of
     //    the stringstream classes.  The stringstream classes are the
@@ -147,7 +147,7 @@ namespace facilities {
     return val;
   }  
 
-  double Util::stringToDouble(const std::string& inStr) {
+  auto Util::stringToDouble(const std::string& inStr) -> double {
     // Extra test is because OSX Leopard converts 3. to a double (3)
     // and a string (.) while everyone else just gives a double (3.)
     double val;
@@ -165,7 +165,7 @@ namespace facilities {
   }
 
 
-  int Util::stringToInt(const std::string& inStr) {
+  auto Util::stringToInt(const std::string& inStr) -> int {
     int  val;
     char junk[3];
     int nItem = sscanf(inStr.c_str(), "%d %1s", &val, junk);
@@ -175,7 +175,7 @@ namespace facilities {
     return val;
   }
 
-  unsigned int Util::stringToUnsigned(const std::string& inStr) {
+  auto Util::stringToUnsigned(const std::string& inStr) -> unsigned int {
     unsigned int  val;
     char junk[3];
     // %u format blithely wraps negative numbers around to positive ones, 
@@ -196,7 +196,7 @@ namespace facilities {
     return val;
   }
 
-  unsigned long long Util::stringToUll(const std::string& inStr) {
+  auto Util::stringToUll(const std::string& inStr) -> unsigned long long {
     unsigned long long  val;
     char junk[3];
     // %u format blithely wraps negative numbers around to positive ones, 
@@ -254,14 +254,14 @@ namespace facilities {
       } 
   }
   
-  std::string Util::basename(const std::string& path) {
+  auto Util::basename(const std::string& path) -> std::string {
      std::vector<std::string> names;
      stringTokenize(path, "\\/", names);
      return *(names.end() - 1);
   }
 
 
-  unsigned Util::trimLeading(std::string* toTrim) {
+  auto Util::trimLeading(std::string* toTrim) -> unsigned {
     std::string::size_type first_char = toTrim->find_first_not_of(" \r\n\t\f");
     if (first_char == std::string::npos)
       return 0;
@@ -270,7 +270,7 @@ namespace facilities {
   }
 
 
-  unsigned Util::trimTrailing(std::string* toTrim) {
+  auto Util::trimTrailing(std::string* toTrim) -> unsigned {
     static const char blank=' ';
     static const char LF=0xA;    // new line
     static const char FF=0xC;    // form feed
@@ -303,7 +303,7 @@ namespace facilities {
   }
 
 
-  unsigned Util::trim(std::string* toTrim) {
+  auto Util::trim(std::string* toTrim) -> unsigned {
     return Util::trimTrailing(toTrim)
            + Util::trimLeading(toTrim);
   }
