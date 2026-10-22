@@ -38,6 +38,8 @@ target_link_libraries(test_Util PRIVATE facilities)
 ### SWIG generates the python wrapper library
 include(UseSWIG)
 
+set(CMAKE_SWIG_FLAGS -py3-stable-abi)
+
 set_property(SOURCE src/py_facilities.i PROPERTY CPLUSPLUS ON)
 swig_add_library(py_facilities LANGUAGE python SOURCES src/py_facilities.i)
 target_include_directories(
@@ -45,7 +47,7 @@ target_include_directories(
   PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}> $<INSTALL_INTERFACE:>
 )
 
-target_link_libraries(py_facilities PRIVATE facilities Python3::Python)
+target_link_libraries(py_facilities PRIVATE facilities Python3::SABIModule)
 
 if(APPLE)
   target_link_options(py_facilities PRIVATE -bundle -flat_namespace)
