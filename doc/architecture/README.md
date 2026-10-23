@@ -196,6 +196,23 @@ None. The three test programs (below) are installed to `bin/`.
 re-exports it and calls `setupEnvironment()` at import time.
 `src/py_facilities.in` is an unused near-duplicate of the `.i` file.
 
+### Environment variables
+
+The activation-set variables (`FERMI_INST_DIR`, `CALDB*`, `TIMING_DIR`, …)
+are described under "Runtime environment" in ScienceTools'
+`docs/architecture/README.md`. What facilities itself does with the
+environment (live HEADAS branch only):
+
+| Variable | Read or set by | Effect |
+|----------|----------------|--------|
+| `FERMI_INST_DIR` | read by `getPackageRoot` (`commonUtilities.cxx`) | Root of every path getter. Unset gives `""` and paths like `/refdata/fermi/<pkg>`. |
+| `<PKG>XMLPATH`, `<PKG>DATAPATH` | set by `setupEnvironment()` if unset | One pair per `FERMI_COMPONENTS` entry, for `$(VAR)` references in XML and par files. |
+| `TIMING_DIR`, `CALDB`, `CALDBCONFIG`, `CALDBALIAS` | set by `setupEnvironment()` if unset | Fallbacks only; activation normally sets them first (see [setupEnvironment()](#setupenvironment)). |
+| any `VAR` | read by `Util::expandEnvVar` (`Util.cxx`) and `commonUtilities::getEnvironment` | `$(VAR)`/`${VAR}` expansion; throws `facilities::Untranslatable` if unset. |
+
+The `<PKG>ROOT` scan of `environ` in `setupEnvironment()` belongs to the
+non-HEADAS branch and is not compiled.
+
 ### File formats
 
 None read or written. The SCons branch read `$INST_DIR/data/supersede.pkgList`,
@@ -210,9 +227,15 @@ but it is not compiled under CMake.
   the generated `py_facilities.py` to `site-packages/fermitools`. There is no
   `data/`, `xml/` or `pfiles/` directory.
 - **Tests:** `test_env`, `test_time`, `test_Util` (`src/test/`). They are
-  built and installed to `bin/`, but **not registered with CTest**. Run them
-  by hand; `test_env` returns the error count as its exit status, and the
-  other two only print.
+  built and installed to `bin/`, but **not registered with CTest**. All
+  three are in the default run of the project harness
+  `recipe/tests/ST-unit-test` (see "Testing" in ScienceTools'
+  `docs/architecture/README.md`), which checks only their exit status; no
+  output is compared and no facilities reference data exists anywhere.
+  `test_env` returns the error count as its exit status. `test_time` always
+  returns 0, and `test_Util` returns 1 only if one valid
+  `stringToDouble` conversion throws, so those two otherwise fail only if
+  they crash.
   - `test_env` checks `setEnvironment` overwrite rules and that
     `FACILITIESXMLPATH` matches `getXmlPath("facilities")` after
     `setupEnvironment()`. Its `getDataPath` emptiness check cannot fail
