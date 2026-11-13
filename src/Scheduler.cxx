@@ -5,15 +5,15 @@
 
 #include <cassert>
 
-Scheduler* Scheduler::s_instance = 0;
+Scheduler* Scheduler::s_instance = nullptr;
 auto Scheduler::instance() -> Scheduler*{return (s_instance) ? s_instance : new Scheduler();}
 
 Scheduler::Scheduler()
 : m_time(GPStime(0))
 , m_running(false)
-, m_log(0)
+, m_log(nullptr)
 {
-    assert( s_instance==0);  // require only one
+    assert( s_instance==nullptr);  // require only one
     s_instance = this;
 }
 
@@ -24,7 +24,7 @@ Scheduler::~Scheduler()
 void Scheduler::clear()
 {
     while( ! empty() ) {
-	iterator f = begin();
+	auto f = begin();
 	delete (*f).second;
 	erase(f);
     }
@@ -67,7 +67,7 @@ void Scheduler::printOn(std::ostream& out)const
 {
     out << "\nScheduler stack: current time = " << elapsed_time() << std::endl;
     out << "\ttime\tclass name\n";
-    for( const_iterator it= begin(); it !=end(); ++it){
+    for( auto it= begin(); it !=end(); ++it){
 	std::pair<double, ScheduledEvent*> entry = *it;
 	out << "\t" << entry.first << '\t' << entry.second->name() << std::endl ;
     }
@@ -85,5 +85,5 @@ void Scheduler::setLog(std::ostream& out)
 
 void Scheduler::endLogging()
 {
-    m_log = 0;
+    m_log = nullptr;
 }

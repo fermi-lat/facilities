@@ -17,7 +17,7 @@ namespace facilities {
 
   // return current time (resolution of 1 second)
   Timestamp::Timestamp() : m_nano(0) {
-    m_time = time(0);
+    m_time = time(nullptr);
   }
 
   // time specified as seconds since 1970 in the timezone corresponding
@@ -99,7 +99,7 @@ namespace facilities {
     // decrease second count so that string representation comes out right
 
     int decr = getAdjustment();
-    Timestamp* temp = new Timestamp(str);
+    auto* temp = new Timestamp(str);
     *temp = Timestamp(temp->getClibTime() - decr, temp->getNano());
     str = temp->getString(false);
     delete temp;

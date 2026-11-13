@@ -202,7 +202,7 @@ namespace facilities {
   }
 
   void commonUtilities::setEnvironment(const std::string &name, const std::string &value, bool overwrite){
-    if(getenv(name.c_str())==NULL || overwrite){
+    if(getenv(name.c_str())==nullptr || overwrite){
 #ifdef WIN32
       _putenv((name+"="+value).c_str());
 #else
@@ -214,7 +214,7 @@ namespace facilities {
   auto commonUtilities::getEnvironment(const std::string &name) -> std::string{
     const char *env = getenv(name.c_str());
     std::string toReturn;
-    if(env!=NULL)
+    if(env!=nullptr)
       toReturn = env;
     return toReturn;
   }
@@ -227,7 +227,7 @@ namespace facilities {
 #else
 #ifdef HEADAS
     const char *env = getenv("FERMI_INST_DIR");
-    if(env != NULL)
+    if(env != nullptr)
       packageRoot = env;
 #else
     std::string upperCase=package;

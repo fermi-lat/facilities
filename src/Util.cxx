@@ -243,7 +243,7 @@ namespace facilities {
     stringTokenize(input,delimiters,strvec,true);
     unsigned advance = pairDelimiter.size();
 
-    std::vector<std::string>::const_iterator input_itr = strvec.begin();
+    auto input_itr = strvec.begin();
     while(input_itr!=strvec.end())
       {
 	std::string current = *input_itr++;

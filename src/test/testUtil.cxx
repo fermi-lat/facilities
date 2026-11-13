@@ -119,7 +119,7 @@ auto main(int, char**) -> int {
   std::cout << "Input string: '" << input1 << "'" << std::endl;
   std::map<std::string,std::string> maptokens;
   facilities::Util::keyValueTokenize(input1,",",maptokens,"=", false);
-  std::map<std::string,std::string>::const_iterator tokens_itr=maptokens.begin();
+  auto tokens_itr=maptokens.begin();
   while (tokens_itr!=maptokens.end()) {
     std::cout << "Token key " <<(*tokens_itr).first  << " and value: " 
 	      << (*tokens_itr).second << std::endl;
